@@ -1,0 +1,853 @@
+[32mOPENAIRCN_DIR    = /home/aerpaw/openair-cn[00m
+Initializing shared logging
+Initializing shared logging Done
+Initializing OAI Logging
+Initializing OAI logging Done
+mme_config_parse_opt_line mme_config.config_file /usr/local/etc/oai/mme.conf
+[0;36m000005 00000:109516 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1016    ==== EURECOM MME vBranch: develop Abrev. Hash: 18df8ed9 Date: Mon Mar 23 15:12:11 2020 +0100 ====
+[0m[0;32m000006 00000:109536 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1018    Built with CMAKE_BUILD_TYPE ................: Debug
+[0m[0;32m000007 00000:109547 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1019    Built with DISABLE_ITTI_DETECT_SUB_TASK_ID .: 1
+[0m[0;32m000008 00000:109555 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1020    Built with ITTI_TASK_STACK_SIZE ............: 2097152
+[0m[0;32m000009 00000:109562 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1021    Built with ITTI_LITE .......................: 0
+[0m[0;32m000010 00000:109569 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1022    Built with LOG_OAI .........................: 1
+[0m[0;32m000011 00000:109577 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1023    Built with LOG_OAI_CLEAN_HARD ..............: 0
+[0m[0;32m000012 00000:109584 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1024    Built with MESSAGE_CHART_GENERATOR .........: 0
+[0m[0;32m000013 00000:109591 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1025    Built with PACKAGE_NAME ....................: MME
+[0m[0;32m000014 00000:109598 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1026    Built with S1AP_DEBUG_LIST .................: 0
+[0m[0;32m000015 00000:109605 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1027    Built with SECU_DEBUG ......................: 1
+[0m[0;32m000016 00000:109612 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1028    Built with SCTP_DUMP_LIST ..................: 0
+[0m[0;32m000017 00000:109619 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1029    Built with TRACE_HASHTABLE .................: 0
+[0m[0;32m000018 00000:109627 7FC6B2A442C0 DEBUG CONFIG nair-cn/src/mme_app/mme_config.c:1030    Built with TRACE_3GPP_SPEC .................: 1
+[0m[0;36m000019 00000:109634 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1032    Configuration:
+[0m[0;36m000020 00000:109641 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1033    - File .................................: /usr/local/etc/oai/mme.conf
+[0m[0;36m000021 00000:109648 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1034    - Realm ................................: AERPAW.MSU
+[0m[0;36m000022 00000:109656 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1035    - Run mode .............................: BASIC
+[0m[0;36m000023 00000:109663 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1036    - Max eNBs .............................: 8
+[0m[0;36m000024 00000:109670 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1037    - Max UEs ..............................: 128
+[0m[0;36m000025 00000:109677 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1038    - IMS voice over PS session in S1 ......: false
+[0m[0;36m000026 00000:109684 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1039    - Emergency bearer services in S1 mode .: false
+[0m[0;36m000027 00000:109692 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1040    - Location services via epc ............: false
+[0m[0;36m000028 00000:109699 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1041    - Extended service request .............: false
+[0m[0;36m000029 00000:109706 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1042    - Unauth IMSI support ..................: false
+[0m[0;36m000030 00000:109714 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1043    - Relative capa ........................: 10
+[0m[0;36m000031 00000:109721 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1044    - Statistics timer .....................: 10 (seconds)
+
+[0m[0;36m000032 00000:109740 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1045    - S1-MME:
+[0m[0;36m000033 00000:109748 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1046        port number ......: 36412
+[0m[0;36m000034 00000:109755 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1047    - IP:
+[0m[0;36m000035 00000:109762 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1048        s1-MME iface .....: ens10
+[0m[0;36m000036 00000:109771 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1049        s1-MME ip ........: 192.168.12.62
+[0m[0;36m000037 00000:109778 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1050        s11 MME iface ....: ens9:m11
+[0m[0;36m000038 00000:109785 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1051        s11 MME port .....: 2123
+[0m[0;36m000039 00000:109793 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1052        s11 MME ip .......: 172.16.1.102
+[0m[0;36m000040 00000:109800 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1053        s10 MME iface ....: ens9
+[0m[0;36m000041 00000:109807 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1054        s10 MME port .....: 2123
+[0m[0;36m000042 00000:109815 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1055        s10 MME ip .......: 192.168.0.148
+[0m[0;36m000043 00000:109822 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1056    - ITTI:
+[0m[0;36m000044 00000:109829 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1057        queue size .......: 2000000 (bytes)
+[0m[0;36m000045 00000:109836 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1058        log file .........: (null)
+[0m[0;36m000046 00000:109843 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1059    - SCTP:
+[0m[0;36m000047 00000:109850 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1060        in streams .......: 8
+[0m[0;36m000048 00000:109857 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1061        out streams ......: 8
+[0m[0;36m000049 00000:109864 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1062    - GUMMEIs (PLMN|MMEGI|MMEC):
+[0m[0;36m000050 00000:109870 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1065                208.93 |4|1 
+[0m[0;36m000051 00000:109878 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1068    - TAIs : (mcc.mnc:tac)
+[0m[0;36m000052 00000:109885 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1071    - TAI list type one PLMN consecutive TACs
+[0m[0;36m000053 00000:109892 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1083                208. 93:1
+[0m[0;36m000054 00000:109900 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1089    - NAS:
+[0m[0;36m000055 00000:109907 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1094        Prefered Integrity Algorithms .: EIA2 EIA1 EIA0 EIA0 (decreasing priority)
+[0m[0;36m000056 00000:109915 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1099        Prefered Integrity Algorithms .: EEA0 EEA1 EEA2 EEA0 (decreasing priority)
+[0m[0;36m000057 00000:109923 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1100        T3346 ....: 5 min
+[0m[0;36m000058 00000:109930 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1101        T3402 ....: 12 min
+[0m[0;36m000059 00000:109937 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1102        T3412 ....: 54 min
+[0m[0;36m000060 00000:109944 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1103        T3422 ....: 6 sec
+[0m[0;36m000061 00000:109952 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1104        T3450 ....: 6 sec
+[0m[0;36m000062 00000:109959 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1105        T3460 ....: 6 sec
+[0m[0;36m000063 00000:109966 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1106        T3470 ....: 6 sec
+[0m[0;36m000064 00000:109979 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1107        T3485 ....: 8 sec
+[0m[0;36m000065 00000:109986 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1108        T3486 ....: 8 sec
+[0m[0;36m000066 00000:109994 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1109        T3489 ....: 10 sec
+[0m[0;36m000067 00000:110001 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1110        T3470 ....: 6 sec
+[0m[0;36m000068 00000:110008 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1111        T3495 ....: 8 sec
+[0m[0;36m000069 00000:110015 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1112        NAS non standart features .:
+[0m[0;36m000070 00000:110022 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1113          Force TAU ...................: true
+[0m[0;36m000071 00000:110029 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1114          Force reject SR .............: true
+[0m[0;36m000072 00000:110037 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1115          Disable Esm information .....: false
+[0m[0;36m000073 00000:110044 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1117    - S6A:
+[0m[0;36m000074 00000:110051 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1118        conf file ........: /usr/local/etc/oai/freeDiameter/mme_fd.conf
+[0m[0;36m000075 00000:110058 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1119    - Logging:
+[0m[0;36m000076 00000:110065 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1120        Output ..............: CONSOLE
+[0m[0;36m000077 00000:110072 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1121        Output thread safe ..: false
+[0m[0;36m000078 00000:110080 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1122        Output with color ...: true
+[0m[0;36m000079 00000:110087 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1123        UDP log level........: TRACE
+[0m[0;36m000080 00000:110094 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1124        GTPV2-C log level....: TRACE
+[0m[0;36m000081 00000:110101 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1125        SCTP log level.......: TRACE
+[0m[0;36m000082 00000:110108 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1126        S1AP log level.......: TRACE
+[0m[0;36m000083 00000:110116 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1127        ASN1 Verbosity level : 0
+[0m[0;36m000084 00000:110123 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1128        NAS log level........: TRACE
+[0m[0;36m000085 00000:110130 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1129        MME_APP log level....: TRACE
+[0m[0;36m000086 00000:110137 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1130        S10 log level........: INVALID_LOG_LEVEL
+[0m[0;36m000087 00000:110144 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1131        S11 log level........: TRACE
+[0m[0;36m000088 00000:110151 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1132        S6a log level........: TRACE
+[0m[0;36m000089 00000:110158 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1133        UTIL log level.......: TRACE
+[0m[0;36m000090 00000:110165 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1134        MSC log level........: TRACE (MeSsage Chart)
+[0m[0;36m000091 00000:110173 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1135        ITTI log level.......: ERROR (InTer-Task Interface)
+[0m[0;36m000092 00000:110180 7FC6B2A442C0 INFO  CONFIG nair-cn/src/mme_app/mme_config.c:1136        XML log level........: INVALID_LOG_LEVEL (XML dump/load of messages)
+[0m Creating queue of message of size 128
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 256
+ Creating queue of message of size 1024
+ Creating queue of message of size 1024
+ Creating queue of message of size 256
+[0;32m000093 00000:127708 7FC6B2A442C0 DEBUG NAS    ir-cn/src/nas/emm/nas_emm_task.c:0171    Initializing NAS EMM task interface
+[0m[0;37m000094 00000:127742 7FC6B2A442C0 TRACE NAS-EM penair-cn/src/nas/emm/emm_main.c:0092    Entering emm_main_initialize()
+[0m[0;37m000095 00000:127751 7FC6B2A442C0 TRACE NAS    air-cn/src/nas/api/mme/mme_api.c:0120      Entering mme_api_get_emm_config()
+[0m[0;37m000096 00000:127757 7FC6B2A442C0 TRACE NAS    air-cn/src/nas/api/mme/mme_api.c:0250      Leaving mme_api_get_emm_config() (rc=0)
+[0m[0;37m000097 00000:127770 7FC6B2A442C0 TRACE NAS-EM penair-cn/src/nas/emm/emm_main.c:0109    Leaving emm_main_initialize()
+[0m[0;32m000098 00000:127824 7FC6B2A442C0 DEBUG NAS    ir-cn/src/nas/emm/nas_emm_task.c:0180    Initializing NAS EMM task interface: DONE
+[0m[0;32m000099 00000:127830 7FC6B2A442C0 DEBUG NAS    ir-cn/src/nas/esm/nas_esm_task.c:0158    Initializing NAS ESM task interface
+[0m[0;37m000100 00000:127834 7FC6B2A442C0 TRACE NAS-ES penair-cn/src/nas/esm/esm_main.c:0093    Entering esm_main_initialize()
+[0m[0;37m000101 00000:127838 7FC6B2A442C0 TRACE NAS-ES penair-cn/src/nas/esm/esm_main.c:0098    Leaving esm_main_initialize()
+[0m[0;32m000102 00000:127869 7FC6B2A442C0 DEBUG NAS    ir-cn/src/nas/esm/nas_esm_task.c:0167    Initializing NAS ESM task interface: DONE
+[0m[0;32m000103 00000:127878 7FC6B2A442C0 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0718    Initializing SCTP task interface
+[0m[0;32m000104 00000:127908 7FC6B2A442C0 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0732    Initializing SCTP task interface: DONE
+[0m[0;32m000105 00000:127913 7FC6B2A442C0 DEBUG UDP    /src/udp/udp_primitives_server.c:0384    Initializing UDP task interface
+[0m[0;32m000106 00000:127942 7FC6B2A442C0 DEBUG UDP    /src/udp/udp_primitives_server.c:0392    Initializing UDP task interface: DONE
+[0m[0;32m000107 00000:127950 7FC6B2A442C0 DEBUG S10    penair-cn/src/s10/s10_mme_task.c:0381    Initializing S10 interface
+[0m[0;32m000108 00000:128189 7FC6B2A442C0 DEBUG S10    penair-cn/src/s10/s10_mme_task.c:0364    Tx UDP_INIT IP addr 192.168.0.148:2123
+[0m[0;32m000109 00000:128209 7FC6B2A442C0 DEBUG S10    penair-cn/src/s10/s10_mme_task.c:0364    Tx UDP_INIT IP addr 192.168.0.148:0
+[0m[0;32m000110 00000:128224 7FC6B2A442C0 DEBUG S10    penair-cn/src/s10/s10_mme_task.c:0428    Initializing S10 interface: DONE
+[0m[0;32m000111 00000:128238 7FC6B2A442C0 DEBUG S11    penair-cn/src/s11/s11_mme_task.c:0352    Initializing S11 interface
+[0m[0;32m000112 00000:128255 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0165    Creating new listen socket on address 192.168.0.148 and port 2123
+[0m[0;32m000113 00000:128278 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0178    Listened on port 2123
+[0m[0;32m000114 00000:128285 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0198    Inserting new descriptor for task 8, sd 39
+[0m[0;32m000115 00000:128294 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0214    Received 1 events
+[0m[0;32m000116 00000:128304 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0165    Creating new listen socket on address 192.168.0.148 and port 0
+[0m[0;32m000117 00000:128311 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0178    Listened on port 43812
+[0m[0;32m000118 00000:128315 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0198    Inserting new descriptor for task 8, sd 40
+[0m[0;32m000119 00000:128327 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0214    Received 1 events
+[0m[0;32m000120 00000:128500 7FC6B2A442C0 DEBUG S11    penair-cn/src/s11/s11_mme_task.c:0339    Tx UDP_INIT IP addr 172.16.1.102:2123
+[0m[0;32m000121 00000:128522 7FC6B2A442C0 DEBUG S11    penair-cn/src/s11/s11_mme_task.c:0339    Tx UDP_INIT IP addr 172.16.1.102:0
+[0m[0;32m000122 00000:128530 7FC6B2A442C0 DEBUG S11    penair-cn/src/s11/s11_mme_task.c:0399    Initializing S11 interface: DONE
+[0m[0;32m000123 00000:128533 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0165    Creating new listen socket on address 172.16.1.102 and port 2123
+[0m[0;32m000124 00000:128540 7FC6B2A442C0 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0357    Initializing S1AP interface
+[0m[0;32m000125 00000:128546 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0178    Listened on port 2123
+[0m[0;32m000126 00000:128547 7FC6B2A442C0 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0363    ASN1C version 924
+[0m[0;32m000127 00000:128552 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0198    Inserting new descriptor for task 9, sd 41
+[0m[0;32m000128 00000:128557 7FC6B2A442C0 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0366    S1AP Release v10.5
+[0m[0;32m000129 00000:128570 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0214    Received 1 events
+[0m[0;32m000130 00000:128579 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0165    Creating new listen socket on address 172.16.1.102 and port 0
+[0m[0;32m000131 00000:128585 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0178    Listened on port 33664
+[0m[0;32m000132 00000:128589 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0198    Inserting new descriptor for task 9, sd 42
+[0m[0;32m000133 00000:128596 7FC6AA20A700 DEBUG UDP    /src/udp/udp_primitives_server.c:0214    Received 1 events
+[0m[0;32m000134 00000:129658 7FC6B2A442C0 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0383    Initializing S1AP interface: DONE, but not reachable yet (wait for MME<->HSS CER procedure)
+[0m[0;37m000135 00000:129671 7FC6B2A442C0 TRACE MME-AP ir-cn/src/mme_app/mme_app_main.c:0502    Entering mme_app_init()
+[0m[0;32m000136 00000:129738 7FC6B2A442C0 DEBUG MME-AP ir-cn/src/mme_app/mme_app_main.c:0553      Initializing MME applicative layer: DONE -- ASSERTING
+[0m[0;37m000137 00000:129749 7FC6B2A442C0 TRACE MME-AP ir-cn/src/mme_app/mme_app_main.c:0554    Leaving mme_app_init() (rc=0)
+[0m[0;32m000138 00000:129753 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0166    Initializing S6a interface
+[0m[0;32m000139 00000:129764 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0189    Initializing freeDiameter log handler done
+[0m[0;32m000140 00000:129767 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0195    Initializing freeDiameter core...
+[0m[0;31m000141 00000:129813 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:129811 7FC6B2A442C0 LEVEL S6A --no source file-- libfdproto '1.2.1' initialized.
+[0m[0;31m000142 00000:129825 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:129824 7FC6B2A442C0 LEVEL S6A --no source file-- libgnutls '3.5.18' initialized.
+[0m[0;31m000143 00000:129864 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:129863 7FC6B2A442C0 LEVEL S6A --no source file-- HASHLIST is enabled
+[0m[0;31m000144 00000:130538 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:130533 7FC6B2A442C0 LEVEL S6A --no source file-- libfdcore '1.2.1' initialized.
+[0m[0;32m000145 00000:130550 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0201    Initializing freeDiameter core done
+[0m[0;32m000146 00000:130554 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0205    Default ext path: /usr/local/lib/freeDiameter
+[0m[0;31m000147 00000:157796 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:157786 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_3gpp2_avps) extension.
+[0m[0;31m000148 00000:158021 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:158013 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_draftload_avps) extension.
+[0m[0;31m000149 00000:158312 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:158303 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_etsi283034_avps) extension.
+[0m[0;31m000150 00000:158594 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:158592 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc4004_avps) extension.
+[0m[0;31m000151 00000:158781 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:158778 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc4006bis_avps) extension.
+[0m[0;31m000152 00000:159275 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:159272 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc4072_avps) extension.
+[0m[0;31m000153 00000:159372 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:159370 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc4590_avps) extension.
+[0m[0;31m000154 00000:159546 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:159544 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc5447_avps) extension.
+[0m[0;31m000155 00000:159637 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:159634 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc5580_avps) extension.
+[0m[0;31m000156 00000:159747 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:159744 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc5777_avps) extension.
+[0m[0;31m000157 00000:160031 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:160027 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: (INTEGER32   ) "IPTM" -> 84
+[0m[0;31m000158 00000:160045 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:160044 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fa495e0): ENUMVAL p:0x55730fa40de0 data: (INTEGER32   ) "TTP" -> 84
+[0m[0;31m000159 00000:161114 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:161111 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc5778_avps) extension.
+[0m[0;31m000160 00000:161237 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:161235 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc6734_avps) extension.
+[0m[0;31m000161 00000:161345 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:161343 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc6942_avps) extension.
+[0m[0;31m000162 00000:161448 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:161445 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc7155_avps) extension.
+[0m[0;31m000163 00000:162231 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:162228 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc7683_avps) extension.
+[0m[0;31m000164 00000:162382 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:162379 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_rfc7944_avps) extension.
+[0m[0;31m000165 00000:162492 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:162489 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29061_avps) extension.
+[0m[0;31m000166 00000:162782 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:162780 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29128_avps) extension.
+[0m[0;31m000167 00000:162920 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:162918 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29154_avps) extension.
+[0m[0;31m000168 00000:163017 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:163015 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29173_avps) extension.
+[0m[0;31m000169 00000:163120 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:163117 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29212_avps) extension.
+[0m[0;31m000170 00000:164325 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:164322 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29214_avps) extension.
+[0m[0;31m000171 00000:164776 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:164773 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29215_avps) extension.
+[0m[0;31m000172 00000:164941 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:164938 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29217_avps) extension.
+[0m[0;31m000173 00000:165145 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:165142 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29229_avps) extension.
+[0m[0;31m000174 00000:165751 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:165748 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29272_avps) extension.
+[0m[0;31m000175 00000:168121 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:168119 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29273_avps) extension.
+[0m[0;31m000176 00000:168664 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:168662 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29329_avps) extension.
+[0m[0;31m000177 00000:168701 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:168700 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: v/m:VM/VM,  OCTETSTRING, 702    "User-Data"
+[0m[0;31m000178 00000:168711 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:168710 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fad2cb0): AVP p:(nil) data: v/m:VM/VM,  OCTETSTRING, 606    "User-Data"
+[0m[0;31m000179 00000:169065 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:169063 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29336_avps) extension.
+[0m[0;31m000180 00000:170330 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:170328 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29337_avps) extension.
+[0m[0;31m000181 00000:170522 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:170520 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29338_avps) extension.
+[0m[0;31m000182 00000:171326 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:171324 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29343_avps) extension.
+[0m[0;31m000183 00000:171645 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:171642 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29344_avps) extension.
+[0m[0;31m000184 00000:171871 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:171869 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29345_avps) extension.
+[0m[0;31m000185 00000:172129 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:172128 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: v/m:VM/VM,   UNSIGNED32, 3818   "Time-Window"
+[0m[0;31m000186 00000:172140 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:172139 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fa97b10): AVP p:(nil) data: v/m:VM/VM,      GROUPED, 4204   "Time-Window"
+[0m[0;31m000187 00000:173334 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:173332 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29368_avps) extension.
+[0m[0;31m000188 00000:173692 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:173689 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts29468_avps) extension.
+[0m[0;31m000189 00000:173883 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:173882 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: v/m:V-/VM,  OCTETSTRING, 3522   "MBMS-GW-SSM-IP-Address"
+[0m[0;31m000190 00000:173894 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:173893 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fa92180): AVP p:(nil) data: v/m:V-/VM,  OCTETSTRING, 924    "MBMS-GW-SSM-IP-Address"
+[0m[0;31m000191 00000:174309 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174307 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_ts32299_avps) extension.
+[0m[0;31m000192 00000:174332 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174331 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: (INTEGER32   ) "Active" -> 0
+[0m[0;31m000193 00000:174339 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174339 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fa99f70): ENUMVAL p:0x55730fa99d30 data: (INTEGER32   ) "ACTIVE" -> 0
+[0m[0;31m000194 00000:174345 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174344 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: (INTEGER32   ) "Inactive" -> 1
+[0m[0;31m000195 00000:174350 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174349 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fa9a0f0): ENUMVAL p:0x55730fa99d30 data: (INTEGER32   ) "INACTIVE" -> 1
+[0m[0;31m000196 00000:174359 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174359 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: v/m:VM/VM,    INTEGER32, 4406   "3GPP-PS-Data-Off-Status"
+[0m[0;31m000197 00000:174366 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:174365 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fa9a270): AVP p:0x55730fa99d30 data: v/m:V-/VM,    INTEGER32, 2847   "3GPP-PS-Data-Off-Status"
+[0m[0;31m000198 00000:178925 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:178924 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: v/m:VM/VM,  OCTETSTRING, 3462   "Radio-Frequency"
+[0m[0;31m000199 00000:178945 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:178943 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fb34b40): AVP p:(nil) data: v/m:VM/VM,   UNSIGNED32, 3508   "Radio-Frequency"
+[0m[0;31m000200 00000:183634 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:183632 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_s6as6d) extension.
+[0m[0;31m000201 00000:183732 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:183729 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_s6t) extension.
+[0m[0;31m000202 00000:183796 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:183794 7FC6B2A442C0 LEVEL S6A --no source file-- Loading (dict_s6c) extension.
+[0m[0;31m000203 00000:183813 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:183812 7FC6B2A442C0 LEVEL S6A --no source file-- An error occurred while adding the following data in the dictionary: data: (UNSIGNED32  ) "Permanent_Failures" -> 3
+[0m[0;31m000204 00000:183824 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:183823 7FC6B2A442C0 LEVEL S6A --no source file-- Conflicting entry in the dictionary: {dictobj}(@0x55730fb8d0c0): ENUMVAL p:0x55730f9f45e0 data: (UNSIGNED32  ) "MME_SGSN_behaviour" -> 3
+[0m[0;31m000205 00000:185795 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185793 7FC6B2A442C0 LEVEL S6A --no source file-- All extensions loaded.
+[0m[0;31m000206 00000:185818 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185817 7FC6B2A442C0 LEVEL S6A --no source file-- freeDiameter configuration:
+[0m[0;31m000207 00000:185825 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185824 7FC6B2A442C0 LEVEL S6A --no source file--   Default trace level .... : +3
+[0m[0;31m000208 00000:185829 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185828 7FC6B2A442C0 LEVEL S6A --no source file--   Configuration file ..... : /usr/local/etc/oai/freeDiameter/mme_fd.conf
+[0m[0;31m000209 00000:185833 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185832 7FC6B2A442C0 LEVEL S6A --no source file--   Diameter Identity ...... : mme.AERPAW.MSU (l:14)
+[0m[0;31m000210 00000:185836 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185835 7FC6B2A442C0 LEVEL S6A --no source file--   Diameter Realm ......... : AERPAW.MSU (l:10)
+[0m[0;31m000211 00000:185839 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185839 7FC6B2A442C0 LEVEL S6A --no source file--   Tc Timer ............... : 30
+[0m[0;31m000212 00000:185843 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185842 7FC6B2A442C0 LEVEL S6A --no source file--   Tw Timer ............... : 30
+[0m[0;31m000213 00000:185847 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185846 7FC6B2A442C0 LEVEL S6A --no source file--   Local port ............. : 3870
+[0m[0;31m000214 00000:185850 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185849 7FC6B2A442C0 LEVEL S6A --no source file--   Local secure port ...... : 5870
+[0m[0;31m000215 00000:185853 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185853 7FC6B2A442C0 LEVEL S6A --no source file--   Number of SCTP streams . : 3
+[0m[0;31m000216 00000:185857 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185856 7FC6B2A442C0 LEVEL S6A --no source file--   Number of clients thr .. : 5
+[0m[0;31m000217 00000:185861 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185860 7FC6B2A442C0 LEVEL S6A --no source file--   Number of app threads .. : 4
+[0m[0;31m000218 00000:185864 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185863 7FC6B2A442C0 LEVEL S6A --no source file--   Local endpoints ........ : Default (use all available)
+[0m[0;31m000219 00000:185867 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185867 7FC6B2A442C0 LEVEL S6A --no source file--   Local applications ..... : (none)
+[0m[0;31m000220 00000:185871 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185870 7FC6B2A442C0 LEVEL S6A --no source file--   Flags : - IP ........... : Enabled
+[0m[0;31m000221 00000:185874 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185874 7FC6B2A442C0 LEVEL S6A --no source file--           - IPv6 ......... : DISABLED
+[0m[0;31m000222 00000:185878 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185877 7FC6B2A442C0 LEVEL S6A --no source file--           - Relay app .... : DISABLED
+[0m[0;31m000223 00000:185885 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185884 7FC6B2A442C0 LEVEL S6A --no source file--           - TCP .......... : Enabled
+[0m[0;31m000224 00000:185888 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185888 7FC6B2A442C0 LEVEL S6A --no source file--           - SCTP ......... : DISABLED (at compilation)
+[0m[0;31m000225 00000:185892 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185891 7FC6B2A442C0 LEVEL S6A --no source file--           - Pref. proto .. : TCP
+[0m[0;31m000226 00000:185895 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185895 7FC6B2A442C0 LEVEL S6A --no source file--           - TLS method ... : Separate port
+[0m[0;31m000227 00000:185899 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185898 7FC6B2A442C0 LEVEL S6A --no source file--   TLS :   - Certificate .. : /usr/local/etc/oai/freeDiameter/mme.cert.pem
+[0m[0;31m000228 00000:185902 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185902 7FC6B2A442C0 LEVEL S6A --no source file--           - Private key .. : /usr/local/etc/oai/freeDiameter/mme.key.pem
+[0m[0;31m000229 00000:185906 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185905 7FC6B2A442C0 LEVEL S6A --no source file--           - CA (trust) ... : /usr/local/etc/oai/freeDiameter/mme.cacert.pem (1 certs)
+[0m[0;31m000230 00000:185909 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185909 7FC6B2A442C0 LEVEL S6A --no source file--           - CRL .......... : (none)
+[0m[0;31m000231 00000:185913 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185912 7FC6B2A442C0 LEVEL S6A --no source file--           - Priority ..... : (default: 'NORMAL')
+[0m[0;31m000232 00000:185916 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185916 7FC6B2A442C0 LEVEL S6A --no source file--           - DH bits ...... : 1024
+[0m[0;31m000233 00000:185920 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185919 7FC6B2A442C0 LEVEL S6A --no source file--   Origin-State-Id ........ : 1589229444
+[0m[0;31m000234 00000:185932 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185931 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_3gpp2_avps.fdx'[(no config file)], loaded
+[0m[0;31m000235 00000:185936 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185935 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_draftload_avps.fdx'[(no config file)], loaded
+[0m[0;31m000236 00000:185940 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185939 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_etsi283034_avps.fdx'[(no config file)], loaded
+[0m[0;31m000237 00000:185943 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185943 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc4004_avps.fdx'[(no config file)], loaded
+[0m[0;31m000238 00000:185947 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185946 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc4006bis_avps.fdx'[(no config file)], loaded
+[0m[0;31m000239 00000:185950 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185950 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc4072_avps.fdx'[(no config file)], loaded
+[0m[0;31m000240 00000:185954 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185953 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc4590_avps.fdx'[(no config file)], loaded
+[0m[0;31m000241 00000:185959 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185959 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc5447_avps.fdx'[(no config file)], loaded
+[0m[0;31m000242 00000:185963 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185962 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc5580_avps.fdx'[(no config file)], loaded
+[0m[0;31m000243 00000:185967 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185966 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc5777_avps.fdx'[(no config file)], loaded
+[0m[0;31m000244 00000:185970 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185969 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc5778_avps.fdx'[(no config file)], loaded
+[0m[0;31m000245 00000:185974 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185973 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc6734_avps.fdx'[(no config file)], loaded
+[0m[0;31m000246 00000:185977 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185976 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc6942_avps.fdx'[(no config file)], loaded
+[0m[0;31m000247 00000:185981 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185980 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc7155_avps.fdx'[(no config file)], loaded
+[0m[0;31m000248 00000:185984 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185983 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc7683_avps.fdx'[(no config file)], loaded
+[0m[0;31m000249 00000:185987 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185987 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_rfc7944_avps.fdx'[(no config file)], loaded
+[0m[0;31m000250 00000:185991 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185990 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29061_avps.fdx'[(no config file)], loaded
+[0m[0;31m000251 00000:185994 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185994 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29128_avps.fdx'[(no config file)], loaded
+[0m[0;31m000252 00000:185998 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:185997 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29154_avps.fdx'[(no config file)], loaded
+[0m[0;31m000253 00000:186001 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186001 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29173_avps.fdx'[(no config file)], loaded
+[0m[0;31m000254 00000:186005 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186004 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29212_avps.fdx'[(no config file)], loaded
+[0m[0;31m000255 00000:186008 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186008 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29214_avps.fdx'[(no config file)], loaded
+[0m[0;31m000256 00000:186012 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186011 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29215_avps.fdx'[(no config file)], loaded
+[0m[0;31m000257 00000:186017 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186016 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29217_avps.fdx'[(no config file)], loaded
+[0m[0;31m000258 00000:186021 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186020 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29229_avps.fdx'[(no config file)], loaded
+[0m[0;31m000259 00000:186024 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186023 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29272_avps.fdx'[(no config file)], loaded
+[0m[0;31m000260 00000:186028 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186027 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29273_avps.fdx'[(no config file)], loaded
+[0m[0;31m000261 00000:186031 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186030 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29329_avps.fdx'[(no config file)], loaded
+[0m[0;31m000262 00000:186034 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186034 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29336_avps.fdx'[(no config file)], loaded
+[0m[0;31m000263 00000:186038 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186037 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29337_avps.fdx'[(no config file)], loaded
+[0m[0;31m000264 00000:186041 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186041 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29338_avps.fdx'[(no config file)], loaded
+[0m[0;31m000265 00000:186045 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186044 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29343_avps.fdx'[(no config file)], loaded
+[0m[0;31m000266 00000:186048 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186048 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29344_avps.fdx'[(no config file)], loaded
+[0m[0;31m000267 00000:186052 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186051 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29345_avps.fdx'[(no config file)], loaded
+[0m[0;31m000268 00000:186055 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186055 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29368_avps.fdx'[(no config file)], loaded
+[0m[0;31m000269 00000:186059 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186058 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts29468_avps.fdx'[(no config file)], loaded
+[0m[0;31m000270 00000:186062 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186061 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_ts32299_avps.fdx'[(no config file)], loaded
+[0m[0;31m000271 00000:186066 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186065 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_S6as6d.fdx'[(no config file)], loaded
+[0m[0;31m000272 00000:186069 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186068 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_S6t.fdx'[(no config file)], loaded
+[0m[0;31m000273 00000:186074 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186073 7FC6B2A442C0 LEVEL S6A --no source file-- Loaded extensions: '/usr/local/lib/freeDiameter/dict_S6c.fdx'[(no config file)], loaded
+[0m[0;32m000274 00000:186087 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0213    fd_core_parseconf done
+[0m[0;32m000275 00000:186091 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0222    Enabled GNUTLS debug at level 9
+[0m[0;31m000276 00000:186557 7FC6B2A442C0 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:186555 7FC6B2A442C0 LEVEL S6A --no source file-- Local server address(es): 12.1.1.1{---L-}	12.1.2.1{---L-}	172.16.1.1{---L-}	172.16.1.102{---L-}	172.16.1.104{---L-}	172.55.55.101{---L-}	172.55.55.102{---L-}	172.58.58.101{---L-}	172.58.58.102{---L-}	192.168.0.148{---L-}	192.168.12.62{---L-}	192.168.122.37{---L-}	192.168.248.159{---L-}	192.169.0.1{---L-}	192.170.0.1{---L-}
+[0m[0;32m000277 00000:186583 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0233    fd_core_start done
+[0m[0;32m000278 00000:186589 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0242    fd_core_waitstartcomplete done
+[0m[0;32m000279 00000:186652 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0250    s6a_fd_init_dict_objs done
+[0m[0;32m000280 00000:187747 7FC6B2A442C0 DEBUG S6A    aw/openair-cn/src/s6a/s6a_task.c:0257    Initializing S6a interface: DONE
+[0m[0;32m000281 00000:187762 7FC6B2A442C0 DEBUG MME-AP openair-cn/src/oai_mme/oai_mme.c:0171    MME app initialization complete
+[0m[0;31m000282 00000:190251 7FC6A1FFB700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:190243 7FC6A1FFB700 LEVEL S6A --no source file-- Connected to 'hss.AERPAW.MSU' (TCP,soc#46), remote capabilities: 
+[0m[0;31m000283 00000:190282 7FC6A1FFB700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:190279 7FC6A1FFB700 LEVEL S6A --no source file--    Capabilities-Exchange-Answer(257)[----], Length=424, Hop-By-Hop-Id=0x3e688052, End-to-End=0x784f8f08, { Result-Code(268)[-M]='DIAMETER_SUCCESS' (2001 (0x7d1)) }, { Origin-Host(264)[-M]="hss.AERPAW.MSU" }, { Origin-Realm(296)[-M]="AERPAW.MSU" }, { Origin-State-Id(278)[-M]=1589212073 (0x5eb973a9) }, { Host-IP-Address(257)[-M]=172.16.1.102 }, { Host-IP-Address(257)[-M]=172.16.1.104 }, { Host-IP-Address(257)[-M]=172.55.55.101 }, { Host-IP-Address(257)[-M]=172.55.55.102 }, { Host-IP-Address(257)[-M]=172.58.58.101 }, { Host-IP-Address(257)[-M]=172.58.58.102 }, { Host-IP-Address(257)[-M]=192.168.0.148 }, { Host-IP-Address(257)[-M]=192.168.12.62 }, { Host-IP-Address(257)[-M]=192.168.122.37 }, { Host-IP-Address(257)[-M]=192.168.248.159 }, { Vendor-Id(266)[-M]=0 (0x0) }, { Product-Name(269)[--]="freeDiameter" }, { Firmware-Revision(267)[--]=10201 (0x27d9) }, { Vendor-Specific-Application-Id(260)[-M]={ Auth-Application-Id(258)[-M]=16777251 (0x1000023) }, { Vendor-Id(266)[-M]=10415 (0x28af) } }, { Vendor-Specific-Application-Id(260)[-M]={ Auth-Application-Id(258)[-M]=16777312 (0x1000060) }, { Vendor-Id(266)[-M]=10415 (0x28af) } }, { Vendor-Specific-Application-Id(260)[-M]={ Auth-Application-Id(258)[-M]=16777345 (0x1000081) }, { Vendor-Id(266)[-M]=10415 (0x28af) } }, { Supported-Vendor-Id(265)[-M]=5535 (0x159f) }, { Supported-Vendor-Id(265)[-M]=10415 (0x28af) }, { Supported-Vendor-Id(265)[-M]=13019 (0x32db) }
+[0m[0;31m000284 00000:190302 7FC6A1FFB700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:190300 7FC6A1FFB700 LEVEL S6A --no source file-- No TLS protection negotiated with peer 'hss.AERPAW.MSU'.
+[0m[0;31m000285 00000:190349 7FC6A1FFB700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00000:190346 7FC6A1FFB700 LEVEL S6A --no source file-- 'STATE_WAITCEA'	-> 'STATE_OPEN'	'hss.AERPAW.MSU'
+[0m[0;32m000286 00001:187939 7FC641FFB700 DEBUG S6A    aw/openair-cn/src/s6a/s6a_peer.c:0116    Diameter identity of MME: mme.AERPAW.MSU with length: 14
+[0m[0;32m000287 00001:188018 7FC641FFB700 DEBUG S6A    aw/openair-cn/src/s6a/s6a_peer.c:0151    S6a peer connection attempt 1 / 8
+[0m[0;32m000288 00001:188065 7FC641FFB700 DEBUG S6A    aw/openair-cn/src/s6a/s6a_peer.c:0164    Peer hss.AERPAW.MSU is now connected...
+[0m[0;32m000289 00001:188329 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0674    Received SCTP_INIT_MSG
+[0m[0;32m000290 00001:188377 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0320    Creating new listen socket on port 36412 with
+[0m[0;32m000291 00001:188392 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0325    ipv4 addresses:
+[0m[0;32m000292 00001:188407 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0334    	- 192.168.12.62
+[0m[0;32m000293 00006:330050 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0448    Client association changed: 0
+[0m[0;32m000294 00006:330129 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0110    ----------------------
+[0m[0;32m000295 00006:330147 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0111    SCTP Status:
+[0m[0;32m000296 00006:330159 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0112    assoc id .....: 31
+[0m[0;32m000297 00006:330170 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0113    state ........: 4
+[0m[0;32m000298 00006:330181 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0114    instrms ......: 8
+[0m[0;32m000299 00006:330192 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0115    outstrms .....: 8
+[0m[0;32m000300 00006:330202 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0116    fragmentation : 1432
+[0m[0;32m000301 00006:330213 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0117    pending data .: 0
+[0m[0;32m000302 00006:330223 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0118    unack data ...: 0
+[0m[0;32m000303 00006:330234 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0119    rwnd .........: 106496
+[0m[0;32m000304 00006:330244 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0120    peer info     :
+[0m[0;32m000305 00006:330254 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0121        state ....: 2
+[0m[0;32m000306 00006:330265 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0122        cwnd .....: 4380
+[0m[0;32m000307 00006:330275 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0123        srtt .....: 0
+[0m[0;32m000308 00006:330286 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0124        rto ......: 3000
+[0m[0;32m000309 00006:330296 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0125        mtu ......: 1500
+[0m[0;32m000310 00006:330306 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0126    ----------------------
+[0m[0;32m000311 00006:330316 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0458    New connection
+[0m[0;32m000312 00006:330351 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0214    ----------------------
+[0m[0;32m000313 00006:330369 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0215    Local addresses:
+[0m[0;32m000314 00006:330380 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0240    ----------------------
+[0m[0;32m000315 00006:330397 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0158    ----------------------
+[0m[0;32m000316 00006:330408 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0159    Peer addresses:
+[0m[0;32m000317 00006:330419 7FC623FFF700 DEBUG SCTP   penair-cn/src/sctp/sctp_common.c:0183    ----------------------
+[0m[0;32m000318 00006:330465 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000319 00006:330550 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0514    [31][49] Msg of length 49 received from port 33664, on stream 0, PPID 18
+[0m[0;32m000320 00006:330580 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;37m000321 00006:330627 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:2155    Entering s1ap_handle_new_association()
+[0m[0;32m000322 00006:330695 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:2162      Create eNB context for assoc_id: 31
+[0m[0;37m000323 00006:330754 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:2203    Leaving s1ap_handle_new_association() (rc=0)
+[0m[0;32m000324 00006:330929 7FC6A8A07700 DEBUG S1AP   /CMakeFiles/r10.5/s1ap_decoder.c:7309    Decoding message S1ap_S1SetupRequestIEs (/home/aerpaw/openair-cn/build/mme/build/CMakeFiles/r10.5/s1ap_decoder.c:7309)
+[0m[0;37m000325 00006:331087 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0266    Entering s1ap_mme_handle_s1_setup_request()
+[0m[0;32m000326 00006:331111 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0293      New s1 setup request incoming from srsenb01 macro eNB id: 0019b[0m
+[0;37m000327 00006:331131 7FC6A8A07700 TRACE S1AP   ir-cn/src/s1ap/s1ap_mme_gummei.c:0090    Leaving s1ap_mme_compare_gummei() (rc=0)
+[0m[0;37m000328 00006:331146 7FC6A8A07700 TRACE S1AP   penair-cn/src/s1ap/s1ap_mme_ta.c:0117    Comparing config tac 1, received tac = 1
+[0m[0;37m000329 00006:331159 7FC6A8A07700 TRACE S1AP   penair-cn/src/s1ap/s1ap_mme_ta.c:0061    Comparing plmn_mcc 208/208, plmn_mnc 93/93 plmn_mnc_len 2/2
+[0m[0;32m000330 00006:331172 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0359    Adding eNB to the list of served eNBs
+[0m[0;37m000331 00006:331186 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0448    Entering s1ap_generate_s1_setup_response()
+[0m[0;37m000332 00006:331269 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0534    Leaving s1ap_generate_s1_setup_response() (rc=0)
+[0m[0;37m000333 00006:331286 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0420    Leaving s1ap_mme_handle_s1_setup_request() (rc=0)
+[0m[0;32m000334 00006:331329 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0278    [49][31] Sending buffer 0x7fc610002fd0 of 27 bytes on stream 0 with ppid 18
+[0m[0;32m000335 00006:331486 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0288    Successfully sent 27 bytes on stream 0
+[0m[0;32m000336 00006:331689 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000337 00010:129932 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0045    ======================================= STATISTICS ============================================
+
+[0m[0;32m000338 00010:130017 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0046                   |   Current Status| Added since last display|  Removed since last display |
+[0m[0;32m000339 00010:130036 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0048    Connected eNBs |          1      |              1              |             0               |
+[0m[0;32m000340 00010:130050 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0050    Attached UEs   |          0      |              0              |             0               |
+[0m[0;32m000341 00010:130063 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0052    Connected UEs  |          0      |              0              |             0               |
+[0m[0;32m000342 00010:130075 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0054    Default Bearers|          0      |              0              |             0               |
+[0m[0;32m000343 00010:130088 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0056    S1-U Bearers   |          0      |              0              |             0               |
+
+[0m[0;32m000344 00010:130101 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0057    ======================================= STATISTICS ============================================
+
+[0m[0;32m000345 00020:129929 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0045    ======================================= STATISTICS ============================================
+
+[0m[0;32m000346 00020:130024 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0046                   |   Current Status| Added since last display|  Removed since last display |
+[0m[0;32m000347 00020:130041 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0048    Connected eNBs |          1      |              0              |             0               |
+[0m[0;32m000348 00020:130054 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0050    Attached UEs   |          0      |              0              |             0               |
+[0m[0;32m000349 00020:130066 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0052    Connected UEs  |          0      |              0              |             0               |
+[0m[0;32m000350 00020:130077 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0054    Default Bearers|          0      |              0              |             0               |
+[0m[0;32m000351 00020:130088 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0056    S1-U Bearers   |          0      |              0              |             0               |
+
+[0m[0;32m000352 00020:130099 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0057    ======================================= STATISTICS ============================================
+
+[0m[0;32m000353 00025:802195 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0514    [31][49] Msg of length 87 received from port 33664, on stream 1, PPID 18
+[0m[0;32m000354 00025:802304 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000355 00025:802435 7FC6A8A07700 DEBUG S1AP   /CMakeFiles/r10.5/s1ap_decoder.c:1456    Decoding message S1ap_InitialUEMessageIEs (/home/aerpaw/openair-cn/build/mme/build/CMakeFiles/r10.5/s1ap_decoder.c:1456)
+[0m[0;37m000356 00025:802590 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0077    Entering s1ap_mme_handle_initial_ue_message()
+[0m[0;36m000357 00025:802613 7FC6A8A07700 INFO  S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0085      Received S1AP INITIAL_UE_MESSAGE eNB_UE_S1AP_ID 000001
+[0m[0;37m000358 00025:802633 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_itti_messaging.c:0135      Entering s1ap_mme_itti_s1ap_initial_ue_message()
+[0m[0;32m000359 00025:802646 7FC6A8A07700 DEBUG S1AP   c/s1ap/s1ap_mme_itti_messaging.c:0137         S1AP:Initial UE Message- Size 32: 
+[0m[0;37m000360 00025:802673 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_itti_messaging.c:0190      Leaving s1ap_mme_itti_s1ap_initial_ue_message()
+[0m[0;37m000361 00025:802686 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0218    Leaving s1ap_mme_handle_initial_ue_message() (rc=0)
+[0m[0;37m000362 00025:802742 7FC6A3FFF700 TRACE MME-AP -cn/src/mme_app/mme_app_bearer.c:0384    Entering mme_app_handle_initial_ue_message()
+[0m[0;32m000363 00025:802766 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0392      Received MME_APP_INITIAL_UE_MESSAGE from S1AP
+[0m[0;32m000364 00025:802778 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0403      INITIAL UE Message: Valid mme_code 26 and S-TMSI 1996965898 received from eNB.
+[0m[0;32m000365 00025:802790 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0105      Construct GUTI using S-TMSI received form UE and MME Group Id and PLMN id from MME Conf: 1996965898, 26 
+[0m[0;32m000366 00025:802802 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0133      No MME serves this UE[0m[0;32m000367 00025:802813 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0542      No MME is configured with MME code 26 received in S-TMSI 1996965898 from UE.
+[0m[0;32m000368 00025:802858 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0555      UE context doesn't exist -> create one 
+[0m[0;32m000369 00025:802888 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0577      Created new MME UE context enb_ue_s1ap_id 000001
+[0m[0;32m000370 00025:802901 7FC6A3FFF700 DEBUG MME-AP -cn/src/mme_app/mme_app_bearer.c:0589      MME_APP_INITIAL_UE_MESSAGE. Allocated new MME UE context and new mme_ue_s1ap_id. 1
+[0m[0;37m000371 00025:802934 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0649      Entering mme_insert_ue_context()
+[0m[0;37m000372 00025:802952 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0758      Leaving mme_insert_ue_context() (rc=0)
+[0m[0;37m000373 00025:802964 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1673      Entering mme_ue_context_update_ue_sig_connection_state()
+[0m[0;32m000374 00025:802976 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:1707         MME_APP: UE Connection State changed to CONNECTED.enb_ue_s1ap_id = 1, mme_ue_s1ap_id = 1
+[0m[0;37m000375 00025:802989 7FC6A3FFF700 TRACE MME-AP mme_app/mme_app_itti_messaging.c:0663         Entering notify_s1ap_new_ue_mme_s1ap_id_association()
+[0m[0;32m000376 00025:803011 7FC6A3FFF700 DEBUG MME-AP mme_app/mme_app_itti_messaging.c:0673             Sent MME_APP_S1AP_MME_UE_ID_NOTIFICATION to S1AP for UE Id 1 and enbUeS1apId 1
+[0m[0;37m000377 00025:803023 7FC6A3FFF700 TRACE MME-AP mme_app/mme_app_itti_messaging.c:0674         Leaving notify_s1ap_new_ue_mme_s1ap_id_association()
+[0m[0;37m000378 00025:803060 7FC6A3FFF700 TRACE MME-AP -cn/src/mme_app/mme_app_bearer.c:0632      Leaving mme_app_handle_initial_ue_message()
+[0m[0;37m000379 00025:803090 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:2086    Entering s1ap_handle_mme_ue_id_notification()
+[0m[0;32m000380 00025:803105 7FC6A8A07700 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0688      Associated  sctp_assoc_id 31, enb_ue_s1ap_id 000001, mme_ue_s1ap_id 1:HASH_TABLE_OK 
+[0m[0;37m000381 00025:803120 7FC6A8A07700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0600      Found ue_ref 0x7fc6100034a0 mme_ue_s1ap_id 1
+[0m[0;37m000382 00025:803137 7FC6A8A07700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0614      Found ue_ref 0x7fc6100034a0 mme_ue_s1ap_id 1
+[0m[0;37m000383 00025:803151 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:2090    Leaving s1ap_handle_mme_ue_id_notification()
+[0m[0;37m000384 00025:803159 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0105    Entering nas_proc_establish_ind()
+[0m[0;37m000385 00025:803204 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120      Entering emm_sap_send()
+[0m[0;37m000386 00025:803232 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0196         Entering emm_as_send()
+[0m[0;36m000387 00025:803270 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0202            EMMAS-SAP - Received primitive EMMAS_ESTABLISH_REQ (205)
+[0m[0;37m000388 00025:803284 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0618            Entering _emm_as_establish_req()
+[0m[0;36m000389 00025:803296 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0626               EMMAS-SAP - Received AS connection establish request. 
+[0m[0;36m000390 00025:803308 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662               EMM-CTX - get UE id 1 context (nil)
+[0m[0;37m000391 00025:803321 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0391               Entering nas_message_decode()
+[0m[0;32m000392 00025:803333 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:0403                  hex stream Incoming NAS message:  17 37 b9 20 d1 2c 07 41 01 0b f6 00 f1 10 00 01 1a 77 07 48 0a 02 f0 70 00 04 02 01 d0 11 91 e0[0m
+[0;37m000393 00025:803369 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0694                  Entering nas_message_header_decode()
+[0m[0;37m000394 00025:803381 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0748                  Leaving nas_message_header_decode() (rc=6)
+[0m[0;32m000395 00025:803393 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:0411                  Header seq no of uplink message 44: 
+[0m[0;32m000396 00025:803404 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:0414                  nas_message_header_decode returned size 6
+[0m[0;37m000397 00025:803432 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0827                  Entering _nas_message_protected_decode()
+[0m[0;37m000398 00025:803444 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:1055                     Entering _nas_message_decrypt()
+[0m[0;32m000399 00025:803456 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:1070                        No decryption of message length 26 according to security header type 0x01
+[0m[0;37m000400 00025:803468 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:1073                     Leaving _nas_message_decrypt() (rc=7)
+[0m[0;37m000401 00025:803479 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0776                     Entering _nas_message_plain_decode()
+[0m[0;37m000402 00025:803490 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0111                        Entering emm_msg_decode()
+[0m[0;32m000403 00025:803501 7FC6ABA0D700 DEBUG NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0127                           EMM-MSG   - Message Type 0x41
+[0m[0;37m000404 00025:803516 7FC6ABA0D700 TRACE NAS-EM /src/nas/emm/msg/AttachRequest.c:0045                           Entering decode_attach_request()
+[0m[0;37m000405 00025:803551 7FC6ABA0D700 TRACE NAS-EM /src/nas/ies/EpsMobileIdentity.c:0121                              Entering decode_guti_eps_mobile_identity()
+[0m[0;37m000406 00025:803570 7FC6ABA0D700 TRACE NAS-EM /src/nas/ies/EpsMobileIdentity.c:0157                              Leaving decode_guti_eps_mobile_identity() (rc=11)
+[0m[0;37m000407 00025:803587 7FC6ABA0D700 TRACE NAS-EM rc/nas/ies/UeNetworkCapability.c:0054                              decode_ue_network_capability len = 2
+[0m[0;37m000408 00025:803603 7FC6ABA0D700 TRACE NAS-EM rc/nas/ies/UeNetworkCapability.c:0089                              uenetworkcapability decoded=3
+[0m[0;37m000409 00025:803619 7FC6ABA0D700 TRACE NAS-EM rc/nas/ies/UeNetworkCapability.c:0093                              uenetworkcapability then decoded=3
+[0m[0;37m000410 00025:803639 7FC6ABA0D700 TRACE NAS-ES rc/nas/ies/EsmMessageContainer.c:0045                              Entering decode_esm_message_container()
+[0m[0;37m000411 00025:803658 7FC6ABA0D700 TRACE NAS-ES rc/nas/ies/EsmMessageContainer.c:0061                              Leaving decode_esm_message_container() (rc=6)
+[0m[0;37m000412 00025:803685 7FC6ABA0D700 TRACE NAS-EM /src/nas/emm/msg/AttachRequest.c:0272                           Leaving decode_attach_request() (rc=24)
+[0m[0;37m000413 00025:803700 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0255                        Leaving emm_msg_decode() (rc=26)
+[0m[0;37m000414 00025:803712 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0796                     Leaving _nas_message_plain_decode() (rc=26)
+[0m[0;37m000415 00025:803723 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0850                  Leaving _nas_message_protected_decode() (rc=26)
+[0m[0;37m000416 00025:803734 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0543               Leaving nas_message_decode() (rc=32)
+[0m[0;37m000417 00025:803758 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_recv.c:0159               Entering emm_recv_attach_request()
+[0m[0;36m000418 00025:803778 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/sap/emm_recv.c:0162                  EMMAS-SAP - Received Attach Request message
+[0m[0;37m000419 00025:803792 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:0194                  Entering emm_proc_attach_request()
+[0m[0;36m000420 00025:803803 7FC6ABA0D700 INFO  NAS-EM /openair-cn/src/nas/emm/Attach.c:0212                     EMM-PROC  ATTACH - EPS attach type = EPS (0) requested (ue_id=1)
+[0m[0;36m000421 00025:803817 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                     EMM-CTX - get UE id 1 context (nil)
+[0m[0;33m000422 00025:803861 7FC6ABA0D700 WARNI NAS-EM /openair-cn/src/nas/emm/Attach.c:0302                     EMM-PROC  - No old EMM context exists. Continuing with new EMM context for 1. 
+[0m[0;36m000423 00025:803890 7FC6ABA0D700 INFO  NAS-EM /openair-cn/src/nas/emm/Attach.c:0306                     EMM-PROC  - Continuing for Attach Request for UE_ID 1 after validation of the attach request. 
+[0m[0;36m000424 00025:803903 7FC6ABA0D700 INFO  NAS-EM /openair-cn/src/nas/emm/Attach.c:0308                     EMM-PROC  - No valid EMM context was found for UE_ID 1. 
+[0m[0;34m000425 00025:803915 7FC6ABA0D700 NOTIC NAS-EM /openair-cn/src/nas/emm/Attach.c:0334                     EMM-PROC  - Create EMM context ue_id = 1
+[0m[0;32m000426 00025:803927 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0843                     UE 1 Init EMM-CTX
+[0m[0;32m000427 00025:803938 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0117                     ue_id=1 GUTI cleared
+[0m[0;32m000428 00025:803950 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0142                     ue_id=1 old GUTI cleared
+[0m[0;32m000429 00025:803961 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0168                     ue_id=1 cleared IMSI
+[0m[0;32m000430 00025:803972 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0205                     ue_id=1 IMEI cleared
+[0m[0;32m000431 00025:803983 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0238                     ue_id=1 cleared IMEI_SV 
+[0m[0;32m000432 00025:803995 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0263                     ue_id=1 cleared last visited registered TAI
+[0m[0;37m000433 00025:804006 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0339                     ue_id=1 set security context security type 0
+[0m[0;37m000434 00025:804017 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0346                     ue_id=1 set security context eksi 7
+[0m[0;32m000435 00025:804028 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0332                     ue_id=1 cleared security context 
+[0m[0;32m000436 00025:804039 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0375                     ue_id=1 cleared non current security context 
+[0m[0;37m000437 00025:804050 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0353                     ue_id=1 clear security context vector index
+[0m[0;32m000438 00025:804060 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0297                     ue_id=1 cleared auth vectors 
+[0m[0;32m000439 00025:804071 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0410                     ue_id=1 cleared MS network capability IE
+[0m[0;32m000440 00025:804082 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0384                     ue_id=1 cleared UE network capability IE
+[0m[0;32m000441 00025:804093 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0435                     ue_id=1 cleared current DRX parameter
+[0m[0;32m000442 00025:804106 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:1430                     EMM-CTX - Add in context 0x7fc610003ef0 UE id 1
+[0m[0;37m000443 00025:804120 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0704                     New EMM_SPEC_PROC_TYPE_ATTACH
+[0m[0;32m000444 00025:804131 7FC6ABA0D700 DEBUG NAS-EM /openair-cn/src/nas/emm/Attach.c:0868                      CREATED NEW ATTACH PROC 0x7fc6100046f0 
+. [0m[0;37m000445 00025:804142 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1078                     Entering _emm_attach_run_procedure()
+[0m[0;34m000446 00025:804154 7FC6ABA0D700 NOTIC NAS    /openair-cn/src/nas/emm/Attach.c:1083                        Hit 3GPP TS 24_301R10_5_5_1_2_3__1 : EMM common procedure initiation during attach procedure
+[0m[0;32m000447 00025:804165 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0263                        ue_id=1 cleared last visited registered TAI
+[0m[0;32m000448 00025:804176 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0392                        ue_id=1 set UE network capability IE (present)
+[0m[0;33m000449 00025:804194 7FC6ABA0D700 WARNI NAS-EM /openair-cn/src/nas/emm/Attach.c:1129                        EMM-PROC  - Received an GUTI in the attach request IE for ue_id=1. Continuing with identification procedure. 
+[0m[0;37m000450 00025:804212 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Identification.c:0142                        Entering emm_proc_identification()
+[0m[0;34m000451 00025:804224 7FC6ABA0D700 NOTIC NAS    -cn/src/nas/emm/Identification.c:0148                           Hit 3GPP TS 24_301R10_5_4_4_1 : Identification procedure
+[0m[0;36m000452 00025:804238 7FC6ABA0D700 INFO  NAS-EM -cn/src/nas/emm/Identification.c:0151                           EMM-PROC  - Initiate identification type = IMSI (1), ctx = 0x7fc610003ef0
+[0m[0;37m000453 00025:804254 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0798                           New EMM_COMM_PROC_IDENT
+[0m[0;37m000454 00025:804268 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Identification.c:0493                           Entering _identification_request()
+[0m[0;36m000455 00025:804281 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                              EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000456 00025:804298 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/LowerLayer.c:0531                              Entering emm_as_set_security_data()
+[0m[0;32m000457 00025:804312 7FC6ABA0D700 DEBUG NAS-EM nair-cn/src/nas/emm/LowerLayer.c:0577                                 NO Valid Security Context Available
+[0m[0;37m000458 00025:804328 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/LowerLayer.c:0584                              Leaving emm_as_set_security_data()
+[0m[0;37m000459 00025:804343 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120                              Entering emm_sap_send()
+[0m[0;37m000460 00025:804358 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0196                                 Entering emm_as_send()
+[0m[0;36m000461 00025:804372 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0202                                    EMMAS-SAP - Received primitive EMMAS_SECURITY_REQ (201)
+[0m[0;37m000462 00025:804389 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0990                                    Entering _emm_as_send()
+[0m[0;37m000463 00025:804408 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1439                                       Entering _emm_as_security_req()
+[0m[0;36m000464 00025:804425 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1442                                          EMMAS-SAP - Send AS security request
+[0m[0;37m000465 00025:804440 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0803                                          Entering _emm_as_set_header()
+[0m[0;37m000466 00025:804455 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0855                                          Leaving _emm_as_set_header() (rc=140491259679872)
+[0m[0;37m000467 00025:804471 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_send.c:0842                                          Entering emm_send_identity_request()
+[0m[0;36m000468 00025:804498 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/sap/emm_send.c:0845                                             EMMAS-SAP - Send Identity Request message
+[0m[0;37m000469 00025:804515 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_send.c:0868                                          Leaving emm_send_identity_request() (rc=3)
+[0m[0;36m000470 00025:804530 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                          EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000471 00025:804546 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0884                                          Entering _emm_as_encode()
+[0m[0;37m000472 00025:804562 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0571                                             Entering nas_message_encode()
+[0m[0;37m000473 00025:804587 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0883                                                Entering _nas_message_header_encode()
+[0m[0;37m000474 00025:804603 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0916                                                Leaving _nas_message_header_encode() (rc=1)
+[0m[0;37m000475 00025:804619 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0944                                                Entering _nas_message_plain_encode()
+[0m[0;37m000476 00025:804634 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0281                                                   Entering emm_msg_encode()
+[0m[0;37m000477 00025:804657 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0422                                                   Leaving emm_msg_encode() (rc=3)
+[0m[0;37m000478 00025:804674 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0964                                                Leaving _nas_message_plain_encode() (rc=3)
+[0m[0;37m000479 00025:804690 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0654                                             Leaving nas_message_encode() (rc=3)
+[0m[0;37m000480 00025:804705 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0919                                          Leaving _emm_as_encode() (rc=3)
+[0m[0;37m000481 00025:804721 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0443                                          Entering emm_msg_free()
+[0m[0;32m000482 00025:804736 7FC6ABA0D700 DEBUG NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0452                                             EMM-MSG   - Message Type 0x55
+[0m[0;37m000483 00025:804752 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0546                                          Leaving emm_msg_free()
+[0m[0;36m000484 00025:804767 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                          EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000485 00025:804783 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0937                                          Found emm_common_proc UID 0x2
+[0m[0;37m000486 00025:804799 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1524                                       Leaving _emm_as_security_req() (rc=263)
+[0m[0;32m000487 00025:804814 7FC6ABA0D700 DEBUG NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1087                                       EMMAS-SAP - Sending msg with id 0x107, primitive EMMAS_SECURITY_REQ (201) to S1AP layer for transmission
+[0m[0;37m000488 00025:804881 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1092                                    Leaving _emm_as_send() (rc=0)
+[0m[0;37m000489 00025:804901 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0233                                 Leaving emm_as_send() (rc=0)
+[0m[0;34m000490 00025:804917 7FC6ABA0D700 NOTIC NAS    -cn/src/nas/emm/Identification.c:0523                                 Hit 3GPP TS 24_301R10_5_4_4_2 : Identification initiation by the network
+[0m[0;37m000491 00025:804929 7FC6A3FFF700 TRACE MME-AP /src/mme_app/mme_app_transport.c:0057      Entering mme_app_handle_nas_dl_req()
+[0m[0;32m000492 00025:804984 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:1051                                 T3470 started UE 1
+[0m[0;32m000493 00025:805023 7FC6A3FFF700 DEBUG MME-AP /src/mme_app/mme_app_transport.c:0066         DOWNLINK NAS TRANSPORT Found enb_ue_s1ap_id 000001 mme_ue_s1ap_id 1
+[0m[0;37m000494 00025:805051 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Identification.c:0531                              Leaving _identification_request() (rc=0)
+[0m[0;36m000495 00025:805084 7FC6A3FFF700 INFO  MME-AP /src/mme_app/mme_app_transport.c:0086          MME_APP:DOWNLINK NAS TRANSPORT. MME_UE_S1AP_ID 1 and ENB_UE_S1AP_ID 000001. 
+[0m[0;37m000496 00025:805089 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120                              Entering emm_sap_send()
+[0m[0;37m000498 00025:805136 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_reg.c:0112                                 Entering emm_reg_send()
+[0m[0;37m000499 00025:805157 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0281                                    Entering emm_fsm_process()
+[0m[0;37m000497 00025:805102 7FC6A3FFF700 TRACE MME-AP /src/mme_app/mme_app_transport.c:0125      Leaving mme_app_handle_nas_dl_req() (rc=0)
+[0m[0;37m000501 00025:805233 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0375    Entering s1ap_generate_downlink_nas_transport()
+[0m[0;32m000502 00025:805254 7FC6A8A07700 DEBUG S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0387      SEARCHING UE REFERENCE for SCTP association id 31,  enbUeS1apId 000001 and enbId 411. 
+[0m[0;36m000500 00025:805176 7FC6ABA0D700 INFO  NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0287                                       EMM-FSM   - Received event COMMON_PROC_REQ (1) in state EMM-DEREGISTERED
+[0m[0;34m000503 00025:805315 7FC6A8A07700 NOTIC S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0439      Send S1AP DOWNLINK_NAS_TRANSPORT message ue_id = 1 MME_UE_S1AP_ID = 1 eNB_UE_S1AP_ID = 000001
+[0m[0;37m000504 00025:805319 7FC6ABA0D700 TRACE NAS-EM rc/nas/emm/sap/EmmDeregistered.c:0104                                       Entering EmmDeregistered()
+[0m[0;37m000505 00025:805348 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0450    Leaving s1ap_generate_downlink_nas_transport() (rc=0)
+[0m[0;37m000506 00025:805351 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0187                                          Entering emm_fsm_set_state()
+[0m[0;32m000507 00025:805378 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0278    [49][31] Sending buffer 0x7fc610002ef0 of 27 bytes on stream 1 with ppid 18
+[0m[0;36m000508 00025:805388 7FC6ABA0D700 INFO  NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0193                                             UE 1 EMM-FSM   - Status changed: EMM-DEREGISTERED ===> EMM-COMMON-PROCEDURE-INITIATED
+[0m[0;37m000509 00025:805427 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1741                                             Entering mme_ue_context_update_ue_emm_state()
+[0m[0;36m000510 00025:805446 7FC6ABA0D700 INFO  MME-AP cn/src/mme_app/mme_app_context.c:1762                                                **** Abnormal - No handler for state transition of UE with mme_ue_s1ap_ue_id 1 entering 0 state from 0 state. ****
+[0m[0;37m000511 00025:805464 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1763                                             Leaving mme_ue_context_update_ue_emm_state()
+[0m[0;37m000512 00025:805479 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0217                                          Leaving emm_fsm_set_state() (rc=0)
+[0m[0;37m000513 00025:805496 7FC6ABA0D700 TRACE NAS-EM rc/nas/emm/sap/EmmDeregistered.c:0318                                       Leaving EmmDeregistered() (rc=0)
+[0m[0;37m000514 00025:805512 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0295                                    Leaving emm_fsm_process() (rc=0)
+[0m[0;37m000515 00025:805528 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_reg.c:0125                                 Leaving emm_reg_send() (rc=0)
+[0m[0;37m000516 00025:805544 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Identification.c:0192                              Leaving emm_proc_identification() (rc=0)
+[0m[0;37m000517 00025:805560 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1136                           Leaving _emm_attach_run_procedure() (rc=0)
+[0m[0;32m000518 00025:805569 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0288    Successfully sent 27 bytes on stream 1
+[0m[0;37m000519 00025:805575 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:0424                        Leaving emm_proc_attach_request() (rc=0)
+[0m[0;37m000520 00025:805629 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_recv.c:0350                     Leaving emm_recv_attach_request() (rc=0)
+[0m[0;37m000521 00025:805660 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0443                     Entering emm_msg_free()
+[0m[0;32m000522 00025:805673 7FC6ABA0D700 DEBUG NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0452                        EMM-MSG   - Message Type 0x41
+[0m[0;37m000523 00025:805685 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0546                     Leaving emm_msg_free()
+[0m[0;37m000524 00025:805695 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0766                  Leaving _emm_as_establish_req() (rc=0)
+[0m[0;37m000525 00025:805707 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0233               Leaving emm_as_send() (rc=0)
+[0m[0;37m000526 00025:805719 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0134            Leaving nas_proc_establish_ind() (rc=0)
+[0m[0;32m000527 00025:841974 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000528 00025:842021 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0514    [31][49] Msg of length 57 received from port 33664, on stream 1, PPID 18
+[0m[0;32m000529 00025:842066 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000530 00025:842142 7FC6A8A07700 DEBUG S1AP   /CMakeFiles/r10.5/s1ap_decoder.c:6358    Decoding message S1ap_UplinkNASTransportIEs (/home/aerpaw/openair-cn/build/mme/build/CMakeFiles/r10.5/s1ap_decoder.c:6358)
+[0m[0;37m000531 00025:842220 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0229    Entering s1ap_mme_handle_uplink_nas_transport()
+[0m[0;36m000532 00025:842236 7FC6A8A07700 INFO  S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0250      Received S1AP UPLINK_NAS_TRANSPORT message MME_UE_S1AP_ID 1
+[0m[0;37m000533 00025:842249 7FC6A8A07700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0600      Found ue_ref 0x7fc6100034a0 mme_ue_s1ap_id 1
+[0m[0;37m000534 00025:842278 7FC6A8A07700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0614      Found ue_ref 0x7fc6100034a0 mme_ue_s1ap_id 1
+[0m[0;37m000535 00025:842319 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0311    Leaving s1ap_mme_handle_uplink_nas_transport() (rc=0)
+[0m[0;37m000536 00025:842372 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0262            Entering nas_proc_ul_transfer_ind()
+[0m[0;37m000537 00025:842404 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120               Entering emm_sap_send()
+[0m[0;37m000538 00025:842419 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0196                  Entering emm_as_send()
+[0m[0;36m000539 00025:842430 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0202                     EMMAS-SAP - Received primitive EMMAS_DATA_IND (211)
+[0m[0;37m000540 00025:842443 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0500                     Entering _emm_as_data_ind()
+[0m[0;36m000541 00025:842454 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0505                        EMMAS-SAP - Received AS data transfer indication (ue_id=1, delivered=true, length=11)
+[0m[0;36m000542 00025:842469 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                        EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000543 00025:842482 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0286                        Entering nas_message_decrypt()
+[0m[0;37m000544 00025:842494 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0694                           Entering nas_message_header_decode()
+[0m[0;37m000545 00025:842508 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0748                           Leaving nas_message_header_decode() (rc=1)
+[0m[0;32m000546 00025:842522 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:0354                           Plain NAS message found
+[0m[0;37m000547 00025:842536 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0361                        Leaving nas_message_decrypt() (rc=11)
+[0m[0;37m000548 00025:842565 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0274                        Entering _emm_as_recv()
+[0m[0;36m000549 00025:842577 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0285                           EMMAS-SAP - Received EMM message (length=11) integrity protected 0 ciphered 0 mac matched 0 security context 0
+[0m[0;36m000550 00025:842593 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                           EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000551 00025:842606 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0391                           Entering nas_message_decode()
+[0m[0;32m000552 00025:842620 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:0403                              hex stream Incoming NAS message:  07 56 08 29 80 39 10 32 54 76 98[0m
+[0;37m000553 00025:842647 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0694                              Entering nas_message_header_decode()
+[0m[0;37m000554 00025:842664 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0748                              Leaving nas_message_header_decode() (rc=1)
+[0m[0;32m000555 00025:842679 7FC6ABA0D700 DEBUG NAS    rc/nas/api/network/nas_message.c:0414                              nas_message_header_decode returned size 1
+[0m[0;37m000556 00025:842694 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0776                              Entering _nas_message_plain_decode()
+[0m[0;37m000557 00025:842710 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0111                                 Entering emm_msg_decode()
+[0m[0;32m000558 00025:842725 7FC6ABA0D700 DEBUG NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0127                                    EMM-MSG   - Message Type 0x56
+[0m[0;37m000559 00025:842754 7FC6ABA0D700 TRACE NAS-EM /common/3gpp_24.008_common_ies.c:0279                                    Entering decode_imsi_mobile_identity()
+[0m[0;37m000560 00025:842771 7FC6ABA0D700 TRACE NAS-EM /common/3gpp_24.008_common_ies.c:0343                                    Leaving decode_imsi_mobile_identity() (rc=8)
+[0m[0;37m000561 00025:842787 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0255                                 Leaving emm_msg_decode() (rc=11)
+[0m[0;37m000562 00025:842802 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0796                              Leaving _nas_message_plain_decode() (rc=11)
+[0m[0;37m000563 00025:842818 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0545                           Leaving nas_message_decode() (rc=11)
+[0m[0;34m000564 00025:842876 7FC6ABA0D700 NOTIC NAS    nair-cn/src/nas/emm/sap/emm_as.c:0341                           Hit 3GPP TS 24_301R10_4_4_4_3__1 : Integrity checking of NAS signalling messages exception in the MME
+[0m[0;34m000565 00025:842890 7FC6ABA0D700 NOTIC NAS    nair-cn/src/nas/emm/sap/emm_as.c:0342                           Hit 3GPP TS 24_301R10_4_4_4_3__2 : Process NAS signalling message in the MME, even if it fails the integrity check or MAC cannot be verified
+[0m[0;37m000566 00025:842905 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_recv.c:0843                           Entering emm_recv_identity_response()
+[0m[0;36m000567 00025:842918 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/sap/emm_recv.c:0846                              EMMAS-SAP - Received Identity Response message
+[0m[0;37m000568 00025:842934 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Identification.c:0225                              Entering emm_proc_identification_complete()
+[0m[0;36m000569 00025:842949 7FC6ABA0D700 INFO  NAS-EM -cn/src/nas/emm/Identification.c:0230                                 EMM-PROC  - Identification complete (ue_id=1)
+[0m[0;36m000570 00025:842964 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                 EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;34m000571 00025:842980 7FC6ABA0D700 NOTIC NAS    -cn/src/nas/emm/Identification.c:0238                                 Hit 3GPP TS 24_301R10_5_4_4_4 : Identification completion by the network
+[0m[0;32m000572 00025:843021 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:1126                                 T3470 stopped UE 1
+[0m[0;32m000573 00025:843041 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0193                                 ue_id=1 set IMSI 208930123456789 (valid)
+[0m[0;37m000574 00025:843057 7FC6ABA0D700 TRACE NAS    air-cn/src/nas/api/mme/mme_api.c:0274                                 Entering mme_api_notify_imsi()
+[0m[0;37m000575 00025:843074 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0439                                    Entering mme_ue_context_update_coll_keys()
+[0m[0;37m000576 00025:843089 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0442                                       Update ue context.enb_ue_s1ap_id 000001 ue context.mme_ue_s1ap_id 1 ue context.IMSI 0 ue context.GUTI 000.000|0000|00|00000000
+[0m[0;37m000577 00025:843107 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0446                                       Update ue context 0x55730fc1ac60 enb_ue_s1ap_id 000001 mme_ue_s1ap_id 1 IMSI 208930123456789 GUTI 000.000|0000|00|00000000
+[0m[0;37m000578 00025:843127 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0606                                    Leaving mme_ue_context_update_coll_keys()
+[0m[0;32m000579 00025:843142 7FC6ABA0D700 DEBUG MME-AP air-cn/src/nas/api/mme/mme_api.c:0296                                    MME_APP context for ue_id=1 has a registered valid IMSI 208930123456789 (valid)
+[0m[0;37m000580 00025:843158 7FC6ABA0D700 TRACE NAS    air-cn/src/nas/api/mme/mme_api.c:0297                                 Leaving mme_api_notify_imsi() (rc=0)
+[0m[0;32m000581 00025:843175 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:1538                                 EMM-CTX - Upsert in context UE id 1 with IMSI 208930123456789
+[0m[0;36m000582 00025:843190 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                 EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;32m000583 00025:843206 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0684                                 EMM-CTX - get UE id 1 context 0x7fc610003ef0 by imsi 208930123456789
+[0m[0;37m000584 00025:843222 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120                                 Entering emm_sap_send()
+[0m[0;37m000585 00025:843237 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_reg.c:0112                                    Entering emm_reg_send()
+[0m[0;37m000586 00025:843252 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0281                                       Entering emm_fsm_process()
+[0m[0;36m000587 00025:843268 7FC6ABA0D700 INFO  NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0287                                          EMM-FSM   - Received event COMMON_PROC_CNF (2) in state EMM-COMMON-PROCEDURE-INITIATED
+[0m[0;37m000588 00025:843285 7FC6ABA0D700 TRACE NAS-EM ap/EmmCommonProcedureInitiated.c:0099                                          Entering EmmCommonProcedureInitiated()
+[0m[0;37m000589 00025:843302 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0187                                             Entering emm_fsm_set_state()
+[0m[0;36m000590 00025:843317 7FC6ABA0D700 INFO  NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0193                                                UE 1 EMM-FSM   - Status changed: EMM-COMMON-PROCEDURE-INITIATED ===> EMM-DEREGISTERED
+[0m[0;37m000591 00025:843333 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1741                                                Entering mme_ue_context_update_ue_emm_state()
+[0m[0;36m000592 00025:843349 7FC6ABA0D700 INFO  MME-AP cn/src/mme_app/mme_app_context.c:1762                                                   **** Abnormal - No handler for state transition of UE with mme_ue_s1ap_ue_id 1 entering 0 state from 0 state. ****
+[0m[0;37m000593 00025:843372 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1763                                                Leaving mme_ue_context_update_ue_emm_state()
+[0m[0;37m000594 00025:843388 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0217                                             Leaving emm_fsm_set_state() (rc=0)
+[0m[0;37m000595 00025:843404 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1199                                             Entering _emm_attach_success_identification_cb()
+[0m[0;34m000596 00025:843419 7FC6ABA0D700 NOTIC NAS    /openair-cn/src/nas/emm/Attach.c:1205                                                Hit 3GPP TS 24_301R10_5_5_1_2_3__1 : EMM common procedure initiation during attach procedure
+[0m[0;37m000597 00025:843435 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1223                                                Entering _emm_start_attach_proc_authentication()
+[0m[0;37m000598 00025:843450 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Authentication.c:0243                                                   Entering emm_proc_authentication()
+[0m[0;37m000599 00025:843480 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0826                                                      New EMM_COMM_PROC_AUTH
+[0m[0;37m000600 00025:843498 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0879                                                      New CN_PROC_AUTH_INFO
+[0m[0;37m000601 00025:843514 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Authentication.c:0317                                                      Entering _start_authentication_information_procedure()
+[0m[0;32m000602 00025:843544 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:1065                                                         Ts6a_auth_info started UE 1
+[0m[0;37m000603 00025:843561 7FC6ABA0D700 TRACE NAS    -cn/src/nas/nas_itti_messaging.c:0424                                                         Entering nas_itti_auth_info_req()
+[0m[0;37m000604 00025:843610 7FC6ABA0D700 TRACE NAS    -cn/src/nas/nas_itti_messaging.c:0453                                                         Leaving nas_itti_auth_info_req()
+[0m[0;37m000605 00025:843628 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Authentication.c:0349                                                      Leaving _start_authentication_information_procedure() (rc=0)
+[0m[0;37m000606 00025:843647 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Authentication.c:0311                                                   Leaving emm_proc_authentication() (rc=0)
+[0m[0;37m000607 00025:843663 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1229                                                Leaving _emm_start_attach_proc_authentication() (rc=0)
+[0m[0;37m000608 00025:843679 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1208                                             Leaving _emm_attach_success_identification_cb() (rc=0)
+[0m[0;36m000609 00025:843695 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                             EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000610 00025:843711 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0376                                             Delete IDENT procedure 2
+[0m[0;37m000611 00025:843735 7FC6ABA0D700 TRACE NAS-EM ap/EmmCommonProcedureInitiated.c:0428                                          Leaving EmmCommonProcedureInitiated() (rc=0)
+[0m[0;37m000612 00025:843750 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_fsm.c:0295                                       Leaving emm_fsm_process() (rc=0)
+[0m[0;37m000614 00025:843767 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_reg.c:0125                                    Leaving emm_reg_send() (rc=0)
+[0m[0;32m000613 00025:843757 7FC641FFB700 DEBUG S6A    enair-cn/src/s6a/s6a_auth_info.c:0392    s6a_generate_authentication_info_req plmn: 02F839
+[0m[0;32m000616 00025:843867 7FC641FFB700 DEBUG S6A    enair-cn/src/s6a/s6a_auth_info.c:0393    s6a_generate_authentication_info_req visited_plmn: 02F839
+[0m[0;37m000615 00025:843789 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Identification.c:0369                                 Leaving emm_proc_identification_complete() (rc=0)
+[0m[0;37m000617 00025:843948 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_recv.c:0951                              Leaving emm_recv_identity_response() (rc=0)
+[0m[0;37m000618 00025:843981 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0443                              Entering emm_msg_free()
+[0m[0;32m000619 00025:843999 7FC6ABA0D700 DEBUG NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0452                                 EMM-MSG   - Message Type 0x56
+[0m[0;37m000620 00025:844146 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0546                              Leaving emm_msg_free()
+[0m[0;37m000621 00025:844162 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0478                           Leaving _emm_as_recv() (rc=0)
+[0m[0;37m000622 00025:844178 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0593                        Leaving _emm_as_data_ind() (rc=0)
+[0m[0;37m000623 00025:844190 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0233                     Leaving emm_as_send() (rc=0)
+[0m[0;37m000624 00025:844202 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0289                  Leaving nas_proc_ul_transfer_ind() (rc=0)
+[0m[0;32m000625 00025:849254 7FC68B7FE700 DEBUG S6A    enair-cn/src/s6a/s6a_auth_info.c:0230    Received S6A Authentication Information Answer (AIA)
+[0m[0;31m000626 00025:849332 7FC68B7FE700 ERROR S6A    w/openair-cn/src/s6a/s6a_error.c:0052    Got experimental error 4181:DIAMETER_AUTHENTICATION_DATA_UNAVAILABLE
+[0m[0;37m000627 00025:849400 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0297                  Entering nas_proc_authentication_info_answer()
+[0m[0;32m000628 00025:849422 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0305                     Handling imsi 208930123456789
+[0m[0;36m000629 00025:849436 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                     EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;32m000630 00025:849448 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0684                     EMM-CTX - get UE id 1 context 0x7fc610003ef0 by imsi 208930123456789
+[0m[0;31m000631 00025:849459 7FC6ABA0D700 ERROR NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0326                     INFORMING NAS ABOUT AUTH RESP ERROR CODE
+[0m[0;37m000632 00025:849469 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0374                     Entering nas_proc_auth_param_fail()
+[0m[0;37m000633 00025:849480 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120                        Entering emm_sap_send()
+[0m[0;37m000634 00025:849491 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_cn.c:0347                           Entering emm_cn_send()
+[0m[0;36m000635 00025:849506 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_cn.c:0348                              EMMCN-SAP - Received primitive EMM_CN_AUTHENTICATION_PARAM_FAIL (402)
+[0m[0;37m000636 00025:849522 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_cn.c:0124                              Entering _emm_cn_authentication_fail()
+[0m[0;36m000637 00025:849537 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                 EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000638 00025:849552 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Authentication.c:0483                                 Entering _auth_info_proc_failure_cb()
+[0m[0;37m000639 00025:849567 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0556                                    UE 1 Delete AUTH INFO procedure
+[0m[0;32m000640 00025:849590 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:1136                                    Ts6a_auth_info stopped UE 1
+[0m[0;37m000641 00025:849620 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0613                                    UE 1 Delete CN procedure 0x7fc610004be0
+[0m[0;37m000642 00025:849636 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1257                                    Entering _emm_attach_failure_authentication_cb()
+[0m[0;37m000643 00025:849652 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:0982                                       Entering _emm_attach_reject()
+[0m[0;33m000644 00025:849667 7FC6ABA0D700 WARNI NAS-EM /openair-cn/src/nas/emm/Attach.c:0985                                          EMM-PROC  - EMM attach procedure not accepted by the network (ue_id=1, cause=2)
+[0m[0;33m000645 00025:849682 7FC6ABA0D700 WARNI NAS-EM /openair-cn/src/nas/emm/Attach.c:1000                                          EMM-PROC  - ESM message is missing but attach reject reason due ESM. Continuing with attach reject.
+[0m[0;36m000646 00025:849697 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                          EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000647 00025:849711 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/LowerLayer.c:0531                                          Entering emm_as_set_security_data()
+[0m[0;32m000648 00025:849726 7FC6ABA0D700 DEBUG NAS-EM nair-cn/src/nas/emm/LowerLayer.c:0577                                             NO Valid Security Context Available
+[0m[0;37m000649 00025:849740 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/LowerLayer.c:0584                                          Leaving emm_as_set_security_data()
+[0m[0;37m000650 00025:849754 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/sap/emm_sap.c:0120                                          Entering emm_sap_send()
+[0m[0;37m000651 00025:849769 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0196                                             Entering emm_as_send()
+[0m[0;36m000652 00025:849783 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0202                                                EMMAS-SAP - Received primitive EMMAS_ESTABLISH_REJ (207)
+[0m[0;37m000653 00025:849798 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0990                                                Entering _emm_as_send()
+[0m[0;37m000654 00025:849812 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1988                                                   Entering _emm_as_establish_rej()
+[0m[0;36m000655 00025:849868 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1989                                                      EMMAS-SAP - Send AS connection establish reject
+[0m[0;37m000656 00025:849887 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0803                                                      Entering _emm_as_set_header()
+[0m[0;37m000657 00025:849902 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0855                                                      Leaving _emm_as_set_header() (rc=140491259686592)
+[0m[0;37m000658 00025:849917 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:2016                                                      send ATTACH_REJECT to ue id 1
+[0m[0;37m000659 00025:849932 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_send.c:0536                                                      Entering emm_send_attach_reject()
+[0m[0;36m000660 00025:849946 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/sap/emm_send.c:0539                                                         EMMAS-SAP - Send Attach Reject message (cause=2)
+[0m[0;37m000661 00025:849960 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/sap/emm_send.c:0559                                                      Leaving emm_send_attach_reject() (rc=4)
+[0m[0;36m000662 00025:849975 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                                      EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;37m000663 00025:849990 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0884                                                      Entering _emm_as_encode()
+[0m[0;37m000664 00025:850015 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0571                                                         Entering nas_message_encode()
+[0m[0;37m000665 00025:850030 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0883                                                            Entering _nas_message_header_encode()
+[0m[0;37m000666 00025:850045 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0916                                                            Leaving _nas_message_header_encode() (rc=1)
+[0m[0;37m000667 00025:850059 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0944                                                            Entering _nas_message_plain_encode()
+[0m[0;37m000668 00025:850074 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0281                                                               Entering emm_msg_encode()
+[0m[0;37m000669 00025:850090 7FC6ABA0D700 TRACE NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0422                                                               Leaving emm_msg_encode() (rc=3)
+[0m[0;37m000670 00025:850105 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0964                                                            Leaving _nas_message_plain_encode() (rc=3)
+[0m[0;37m000671 00025:850120 7FC6ABA0D700 TRACE NAS    rc/nas/api/network/nas_message.c:0654                                                         Leaving nas_message_encode() (rc=3)
+[0m[0;37m000672 00025:850135 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0919                                                      Leaving _emm_as_encode() (rc=3)
+[0m[0;37m000673 00025:850150 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0443                                                      Entering emm_msg_free()
+[0m[0;32m000674 00025:850164 7FC6ABA0D700 DEBUG NAS-EM air-cn/src/nas/emm/msg/emm_msg.c:0452                                                         EMM-MSG   - Message Type 0x44
+[0m[0;37m000675 00025:850178 7FC6ABA0D700 TRACE NAS-ES air-cn/src/nas/emm/msg/emm_msg.c:0546                                                      Leaving emm_msg_free()
+[0m[0;36m000676 00025:850193 7FC6ABA0D700 INFO  NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:2084                                                      EMM Cause is 2. Removing bearers too. 
+[0m[0;37m000677 00025:850207 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:2086                                                   Leaving _emm_as_establish_rej() (rc=516)
+[0m[0;32m000678 00025:850221 7FC6ABA0D700 DEBUG NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1087                                                   EMMAS-SAP - Sending msg with id 0x204, primitive EMMAS_ESTABLISH_REJ (207) to S1AP layer for transmission
+[0m[0;37m000679 00025:850265 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:1133                                                Leaving _emm_as_send() (rc=0)
+[0m[0;37m000680 00025:850288 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_as.c:0233                                             Leaving emm_as_send() (rc=0)
+[0m[0;37m000682 00025:850305 7FC6ABA0D700 TRACE NAS    air-cn/src/nas/api/mme/mme_api.c:0516                                             Entering mme_api_remove_subscription_data()
+[0m[0;37m000683 00025:850343 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0897                                                Entering mme_remove_subscription_profile()
+[0m[0;33m000684 00025:850359 7FC6ABA0D700 WARNI MME-AP cn/src/mme_app/mme_app_context.c:0900                                                   No subscription data was found for IMSI 208930123456789 in the subscription profile cache.[0m[0;37m000681 00025:850304 7FC6A3FFF700 TRACE MME-AP /src/mme_app/mme_app_transport.c:0057      Entering mme_app_handle_nas_dl_req()
+[0m[0;37m000685 00025:850374 7FC6ABA0D700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0901                                                Leaving mme_remove_subscription_profile() (rc=0)
+[0m[0;32m000686 00025:850422 7FC6A3FFF700 DEBUG MME-AP /src/mme_app/mme_app_transport.c:0066         DOWNLINK NAS TRANSPORT Found enb_ue_s1ap_id 000001 mme_ue_s1ap_id 1
+[0m[0;37m000687 00025:850447 7FC6ABA0D700 TRACE NAS    air-cn/src/nas/api/mme/mme_api.c:0520                                             Leaving mme_api_remove_subscription_data() (rc=0)
+[0m[0;36m000688 00025:850485 7FC6A3FFF700 INFO  MME-AP /src/mme_app/mme_app_transport.c:0086          MME_APP:DOWNLINK NAS TRANSPORT. MME_UE_S1AP_ID 1 and ENB_UE_S1AP_ID 000001. 
+[0m[0;37m000689 00025:850489 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Detach.c:0095                                             Entering _clear_emm_ctxt()
+[0m[0;36m000691 00025:850531 7FC6ABA0D700 INFO  NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0662                                                EMM-CTX - get UE id 1 context 0x7fc610003ef0
+[0m[0;31m000690 00025:850509 7FC6A3FFF700 ERROR MME-AP /src/mme_app/mme_app_transport.c:0113          MME_APP: UE MME_UE_S1AP_ID 1 is in UE_UNREGISTERED state. Triggering detach (S11 should already be removeD).
+[0m[0;37m000693 00025:850555 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0653                                                Entering nas_delete_all_emm_procedures()
+[0m[0;37m000692 00025:850537 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0375    Entering s1ap_generate_downlink_nas_transport()
+[0m[0;37m000695 00025:850601 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0414                                                   Entering nas_delete_common_procedures()
+[0m[0;37m000694 00025:850580 7FC6A3FFF700 TRACE MME-AP mme_app/mme_app_itti_messaging.c:0064         Entering mme_app_itti_ue_context_release()
+[0m[0;32m000697 00025:850635 7FC6ABA0D700 DEBUG NAS-EM src/nas/emm/nas_emm_procedures.c:0429                                                      UE 1 Delete AUTH procedure & timer
+[0m[0;37m000698 00025:850661 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0469                                                   Leaving nas_delete_common_procedures()
+[0m[0;37m000699 00025:850676 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0480                                                   UE 1 Delete ATTACH procedure
+[0m[0;37m000700 00025:850692 7FC6ABA0D700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0600                                                   Found ue_ref 0x7fc6100034a0 mme_ue_s1ap_id 1
+[0m[0;37m000701 00025:850707 7FC6A3FFF700 TRACE MME-AP mme_app/mme_app_itti_messaging.c:0075         Leaving mme_app_itti_ue_context_release()
+[0m[0;37m000703 00025:850732 7FC6A3FFF700 TRACE MME-AP /src/mme_app/mme_app_transport.c:0125      Leaving mme_app_handle_nas_dl_req() (rc=0)
+[0m[0;37m000702 00025:850709 7FC6ABA0D700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0614                                                   Found ue_ref 0x7fc6100034a0 mme_ue_s1ap_id 1
+[0m[0;32m000696 00025:850616 7FC6A8A07700 DEBUG S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0387      SEARCHING UE REFERENCE for SCTP association id 31,  enbUeS1apId 000001 and enbId 411. 
+[0m[0;32m000704 00025:850768 7FC6ABA0D700 DEBUG NAS-EM src/nas/emm/nas_emm_procedures.c:0494                                                   EMM-PROC (NASx)  -  * * * * * (2) ueREF 0x7fc6100034a0 has mmeId 1, enbId 000001 state 1 and eNB_ref 0x7fc610000d50 (timer arg (nil)). 
+[0m[0;37m000705 00025:850812 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0497                                                   UE 1 stopped the retry timer for attach procedure
+[0m[0;34m000706 00025:850861 7FC6A8A07700 NOTIC S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0439      Send S1AP DOWNLINK_NAS_TRANSPORT message ue_id = 1 MME_UE_S1AP_ID = 1 eNB_UE_S1AP_ID = 000001
+[0m[0;32m000707 00025:850866 7FC6ABA0D700 DEBUG NAS-EM src/nas/emm/nas_emm_procedures.c:0500                                                   EMM-PROC (NASx)  -  * * * * * (2.5) ueREF 0x7fc6100034a0 has mmeId 1, enbId 000001 state 1 and eNB_ref 0x7fc610000d50 (timer arg (nil)). 
+[0m[0;37m000708 00025:850921 7FC6ABA0D700 TRACE NAS-EM src/nas/emm/nas_emm_procedures.c:0666                                                Leaving nas_delete_all_emm_procedures()
+[0m[0;32m000709 00025:850938 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0739                                                EMM-CTX - Remove in context 0x7fc610003ef0 UE id 1
+[0m[0;32m000710 00025:850963 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0758                                                EMM-CTX - Remove in ctx_coll_imsi context 0x7fc610003ef0 UE id 10003ef0 imsi 208930123456789
+[0m[0;32m000711 00025:850980 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0168                                                ue_id=1 cleared IMSI
+[0m[0;37m000712 00025:850982 7FC6A8A07700 TRACE S1AP   c/s1ap/s1ap_mme_nas_procedures.c:0450    Leaving s1ap_generate_downlink_nas_transport() (rc=0)
+[0m[0;32m000713 00025:851027 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0142                                                ue_id=1 old GUTI cleared
+[0m[0;32m000714 00025:851060 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0117                                                ue_id=1 GUTI cleared
+[0m[0;32m000715 00025:851077 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0168                                                ue_id=1 cleared IMSI
+[0m[0;32m000716 00025:851091 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0205                                                ue_id=1 IMEI cleared
+[0m[0;37m000717 00025:851104 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0945    Entering s1ap_handle_ue_context_release_command()
+[0m[0;37m000718 00025:851107 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0353                                                ue_id=1 clear security context vector index
+[0m[0;32m000720 00025:851145 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0297                                                ue_id=1 cleared auth vectors 
+[0m[0;37m000721 00025:851161 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0339                                                ue_id=1 set security context security type 0
+[0m[0;32m000722 00025:851171 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0278    [49][31] Sending buffer 0x7fc610002ec0 of 27 bytes on stream 1 with ppid 18
+[0m[0;37m000723 00025:851177 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0346                                                ue_id=1 set security context eksi 7
+[0m[0;32m000724 00025:851216 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0332                                                ue_id=1 cleared security context 
+[0m[0;32m000725 00025:851231 7FC6ABA0D700 DEBUG NAS-EM ir-cn/src/nas/emm/emm_data_ctx.c:0375                                                ue_id=1 cleared non current security context 
+[0m[0;37m000726 00025:851245 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Detach.c:0132                                             Leaving _clear_emm_ctxt()
+[0m[0;37m000727 00025:851260 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1019                                          Leaving _emm_attach_reject() (rc=0)
+[0m[0;37m000728 00025:851274 7FC6ABA0D700 TRACE NAS-EM /openair-cn/src/nas/emm/Attach.c:1276                                       Leaving _emm_attach_failure_authentication_cb() (rc=0)
+[0m[0;37m000729 00025:851289 7FC6ABA0D700 TRACE NAS-EM -cn/src/nas/emm/Authentication.c:0520                                    Leaving _auth_info_proc_failure_cb() (rc=0)
+[0m[0;37m000730 00025:851303 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_cn.c:0141                                 Leaving _emm_cn_authentication_fail() (rc=0)
+[0m[0;37m000731 00025:851317 7FC6ABA0D700 TRACE NAS-EM nair-cn/src/nas/emm/sap/emm_cn.c:0392                              Leaving emm_cn_send() (rc=0)
+[0m[0;32m000719 00025:851127 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0966      UE reference for enbUeS1apId 000001 and enbId 411 is 0x7fc6100034a0. 
+[0m[0;37m000733 00025:851351 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0386                           Leaving nas_proc_auth_param_fail() (rc=0)
+[0m[0;32m000732 00025:851327 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0288    Successfully sent 27 bytes on stream 1
+[0m[0;37m000735 00025:851400 7FC6ABA0D700 TRACE NAS-EM ir-cn/src/nas/emm/nas_emm_proc.c:0339                        Leaving nas_proc_authentication_info_answer() (rc=0)
+[0m[0;37m000734 00025:851381 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0824      Entering s1ap_mme_generate_ue_context_release_command()
+[0m[0;32m000736 00025:851528 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0907         UE_CONTEXT_RELEASE_REQUEST will be sent for UE with mmeUeS1apId 1. Waiting for RELEASE-COMPLETE to remove the UE-Reference due reason 1. 
+[0m[0;32m000737 00025:851575 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0916         Started S1AP UE context release timer for UE id  1 and timer id 0x7fc610004e80  
+[0m[0;37m000738 00025:851587 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0918      Leaving s1ap_mme_generate_ue_context_release_command() (rc=0)
+[0m[0;37m000739 00025:851598 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:0992    Leaving s1ap_handle_ue_context_release_command() (rc=0)
+[0m[0;32m000740 00025:851623 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0278    [49][31] Sending buffer 0x7fc610004ea0 of 20 bytes on stream 1 with ppid 18
+[0m[0;32m000741 00025:851654 7FC6AAA0B700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0288    Successfully sent 20 bytes on stream 1
+[0m[0;32m000742 00026:054062 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000743 00026:054128 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0514    [31][49] Msg of length 19 received from port 33664, on stream 1, PPID 18
+[0m[0;32m000744 00026:054178 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0519    SCTP RETURNING!!
+[0m[0;32m000745 00026:054238 7FC6A8A07700 DEBUG S1AP   /CMakeFiles/r10.5/s1ap_decoder.c:3721    Decoding message S1ap_UEContextReleaseCompleteIEs (/home/aerpaw/openair-cn/build/mme/build/CMakeFiles/r10.5/s1ap_decoder.c:3721)
+[0m[0;37m000746 00026:054343 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:1006    Entering s1ap_mme_handle_ue_context_release_complete()
+[0m[0;37m000747 00026:054372 7FC6A8A07700 TRACE S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0815      Removing UE enb_ue_s1ap_id: 000001 mme_ue_s1ap_id:1 in eNB id : 411
+[0m[0;32m000748 00026:054402 7FC6A8A07700 DEBUG S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:1043      Removed UE 1
+[0m[0;37m000749 00026:054417 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:1044    Leaving s1ap_mme_handle_ue_context_release_complete() (rc=0)
+[0m[0;37m000750 00026:054448 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1469      Entering mme_app_handle_s1ap_ue_context_release_complete()
+[0m[0;32m000751 00026:054463 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:1595         No Handover procedure ongoing. Received UE context release complete for the main ue_reference of the UE with mme_ue_s1ap_id 1 and enb_ue_s1ap_id 000001 with enb_id 411. 
+[0m[0;37m000752 00026:054476 7FC6A3FFF700 TRACE MME-AP src/mme_app/mme_app_ue_context.c:0250         Entering mme_app_ue_context_s1_release_enb_informations()
+[0m[0;37m000753 00026:054488 7FC6A3FFF700 TRACE MME-AP src/mme_app/mme_app_ue_context.c:0267         Leaving mme_app_ue_context_s1_release_enb_informations()
+[0m[0;37m000754 00026:054499 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1673         Entering mme_ue_context_update_ue_sig_connection_state()
+[0m[0;32m000755 00026:054532 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:1686            MME_APP: UE Connection State changed to IDLE. mme_ue_s1ap_id = 1
+[0m[0;32m000756 00026:054551 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:1694            Started Mobile Reachability timer for UE id  1 
+[0m[0;32m000757 00026:054564 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:1637            Deleting UE context associated in MME for mme_ue_s1ap_id 1
+ [0m[0;37m000758 00026:054575 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0795            Entering mme_remove_ue_context()
+[0m[0;32m000759 00026:054587 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0811               UE context enb_ue_s1ap_ue_id 000001 mme_ue_s1ap_id 1, ENB_UE_S1AP_ID not ENB_UE_S1AP_ID collection. 
+[0m[0;32m000760 00026:054604 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b870 with ebi 14 (i=0) of UE 1. 
+[0m[0;32m000761 00026:054618 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b770 with ebi 13 (i=1) of UE 1. 
+[0m[0;32m000762 00026:054630 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b4c0 with ebi 12 (i=2) of UE 1. 
+[0m[0;32m000763 00026:054642 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b3c0 with ebi 11 (i=3) of UE 1. 
+[0m[0;32m000764 00026:054653 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b2c0 with ebi 10 (i=4) of UE 1. 
+[0m[0;32m000765 00026:054664 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b1c0 with ebi 9 (i=5) of UE 1. 
+[0m[0;32m000766 00026:054675 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1b0c0 with ebi 8 (i=6) of UE 1. 
+[0m[0;32m000767 00026:054686 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1afc0 with ebi 7 (i=7) of UE 1. 
+[0m[0;32m000768 00026:054697 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1aec0 with ebi 6 (i=8) of UE 1. 
+[0m[0;32m000769 00026:054707 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0258               Putting bearer context 0x55730fc1adc0 with ebi 5 (i=9) of UE 1. 
+[0m[0;32m000770 00026:054718 7FC6A3FFF700 DEBUG MME-AP cn/src/mme_app/mme_app_context.c:0288               All bearers removed of UE 1. 
+[0m[0;37m000771 00026:054729 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:0852            Leaving mme_remove_ue_context()
+[0m[0;37m000772 00026:054740 7FC6A3FFF700 TRACE MME-AP cn/src/mme_app/mme_app_context.c:1659         Leaving mme_app_handle_s1ap_ue_context_release_complete()
+[0m[0;32m000773 00030:129884 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0045         ======================================= STATISTICS ============================================
+
+[0m[0;32m000774 00030:129969 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0046                        |   Current Status| Added since last display|  Removed since last display |
+[0m[0;32m000775 00030:129985 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0048         Connected eNBs |          1      |              0              |             0               |
+[0m[0;32m000776 00030:129998 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0050         Attached UEs   |          0      |              0              |             0               |
+[0m[0;32m000777 00030:130009 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0052         Connected UEs  |          0      |              1              |             1               |
+[0m[0;32m000778 00030:130020 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0054         Default Bearers|          0      |              0              |             0               |
+[0m[0;32m000779 00030:130055 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0056         S1-U Bearers   |          0      |              0              |             0               |
+
+[0m[0;32m000780 00030:130067 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0057         ======================================= STATISTICS ============================================
+
+[0m[0;32m000781 00036:334577 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0438    SCTP_SHUTDOWN_EVENT received
+[0m[0;32m000782 00036:334640 7FC623FFF700 DEBUG SCTP   rc/sctp/sctp_primitives_server.c:0527    Sending close connection for assoc_id 31
+[0m[0;37m000783 00036:334742 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:2096    Entering s1ap_handle_sctp_disconnection()
+[0m[0;36m000784 00036:334793 7FC6A8A07700 INFO  S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:2116      Removing eNB with association id 31 
+[0m[0;37m000785 00036:334818 7FC6A8A07700 TRACE S1AP   -cn/src/s1ap/s1ap_mme_handlers.c:2118    Leaving s1ap_handle_sctp_disconnection() (rc=0)
+[0m[0;32m000786 00040:129913 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0045         ======================================= STATISTICS ============================================
+
+[0m[0;32m000787 00040:129983 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0046                        |   Current Status| Added since last display|  Removed since last display |
+[0m[0;32m000788 00040:130001 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0048         Connected eNBs |          0      |              0              |    4294967295               |
+[0m[0;32m000789 00040:130016 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0050         Attached UEs   |          0      |              0              |             0               |
+[0m[0;32m000790 00040:130028 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0052         Connected UEs  |          0      |              0              |             0               |
+[0m[0;32m000791 00040:130079 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0054         Default Bearers|          0      |              0              |             0               |
+[0m[0;32m000792 00040:130097 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0056         S1-U Bearers   |          0      |              0              |             0               |
+
+[0m[0;32m000793 00040:130110 7FC6A3FFF700 DEBUG MME-AP src/mme_app/mme_app_statistics.c:0057         ======================================= STATISTICS ============================================
+
+[0mReceived SIGINT
+[0;32m000794 00040:410239 7FC6ABA0D700 DEBUG NAS    ir-cn/src/nas/emm/nas_emm_task.c:0187                        Cleaning NAS EMM task interface
+[0m[0;37m000795 00040:410266 7FC6ABA0D700 TRACE NAS-EM penair-cn/src/nas/emm/emm_main.c:0130                        Entering emm_main_cleanup()
+[0m[0;37m000796 00040:410312 7FC6ABA0D700 TRACE NAS-EM penair-cn/src/nas/emm/emm_main.c:0135                        Leaving emm_main_cleanup()
+[0m[0;32m000797 00040:410326 7FC6ABA0D700 DEBUG NAS    ir-cn/src/nas/emm/nas_emm_task.c:0190                        Cleaning NAS EMM task interface: DONE
+[0mTASK_NAS_EMM terminated
+TASK_MME_APP terminated
+[0;32m000798 00040:410878 7FC6AB20C700 DEBUG NAS    ir-cn/src/nas/esm/nas_esm_task.c:0174    Cleaning NAS ESM task interface
+[0m[0;37m000799 00040:410937 7FC6AB20C700 TRACE NAS-ES penair-cn/src/nas/esm/esm_main.c:0119    Entering esm_main_cleanup()
+[0m[0;37m000800 00040:410962 7FC6AB20C700 TRACE NAS-ES penair-cn/src/nas/esm/esm_main.c:0121    Leaving esm_main_cleanup()
+[0m[0;32m000801 00040:410977 7FC6AB20C700 DEBUG NAS    ir-cn/src/nas/esm/nas_esm_task.c:0177    Cleaning NAS ESM task interface: DONE
+[0mTASK_NAS_ESM terminated
+TASK_UDP terminated
+TASK_SCTP terminated
+[0;32m000802 00040:411687 7FC6A8A07700 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0389    Cleaning S1AP
+[0m[0;32m000803 00040:411754 7FC6A8A07700 DEBUG S1AP   w/openair-cn/src/s1ap/s1ap_mme.c:0397    Cleaning S1AP: DONE
+[0mTASK_S1AP terminated
+TASK_S11 terminated
+[0;36m000804 00040:412519 7FC641FFB700 INFO  S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:412506 7FC641FFB700 LEVEL S6A --no source file-- Initiating freeDiameter shutdown sequence (3)
+[0m[0;31m000805 00040:412661 7FC6427FC700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:412646 7FC6427FC700 LEVEL S6A --no source file-- freeDiameterd framework is stopping...
+[0m[0;31m000806 00040:412718 7FC6427FC700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:412714 7FC6427FC700 LEVEL S6A --no source file-- Shutting down server sockets...
+[0m[0;31m000807 00040:414802 7FC6427FC700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:414795 7FC6427FC700 LEVEL S6A --no source file-- Sending terminate signal to all peer connections
+[0m[0;31m000808 00040:414859 7FC6427FC700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:414855 7FC6427FC700 LEVEL S6A --no source file-- Waiting for connections shutdown... (16 sec max)
+[0m[0;31m000809 00040:414921 7FC6A1FFB700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:414911 7FC6A1FFB700 LEVEL S6A --no source file-- 'STATE_OPEN'	-> 'STATE_CLOSING_GRACE'	'hss.AERPAW.MSU'
+[0m[0;34m000810 00040:415780 7FC6A1FFB700 NOTIC S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:415773 7FC6A1FFB700 LEVEL S6A --no source file-- hss.AERPAW.MSU: Going to ZOMBIE state (no more activity)
+[0m[0;31m000811 00040:416135 7FC6A1FFB700 ERROR S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:416127 7FC6A1FFB700 LEVEL S6A --no source file-- 'STATE_CLOSED'	-> 'STATE_ZOMBIE' (terminated)	'hss.AERPAW.MSU'
+[0m[7;31m000812 00040:527652 7FC6427FC700 ALERT S6A    aw/openair-cn/src/s6a/s6a_task.c:0089    ...... 00040:527639 7FC6427FC700 LEVEL S6A --no source file-- freeDiameterd framework is terminated.
+[0m[33m
+Exiting by ctrl+c
+[00m
